@@ -1,9 +1,10 @@
 
-<app-header/>
+<div class="app">
+  <app-header/>
+  <div class="grid">
+    <app-sidebar/>
+  </div>
+</div>
 
-<button (click)="increment()">Incrementar</button>
-<button (click)="decrement()">Decrementar</button>
-<button (click)="reset()">Reset</button>
 
 
-Login no GlobalStore {{ login$ | async | json }}

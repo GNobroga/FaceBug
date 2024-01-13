@@ -4,12 +4,13 @@ import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import IApplicationState from 'types/IApplicationState';
 import * as counterActions from '@store/counter.actions';import { HeaderComponent } from 'components/header/header.component';
+import { SidebarComponent } from 'components/sidebar/sidebar.component';
 ;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent, SidebarComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

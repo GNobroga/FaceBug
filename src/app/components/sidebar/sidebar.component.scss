@@ -1,0 +1,130 @@
+:host {
+
+  aside {
+    background-color: var(--second-color-15);
+    color: white;
+    height: 100%;
+    padding: 0.5rem 0.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    .divider {
+      opacity: 0.2;
+    }
+  }
+  .first-section {
+
+    ul {
+      display: flex;
+      list-style: none;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      li {
+        display: flex;
+        place-items: center;
+        gap: 0.8rem;
+        cursor: pointer;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+
+        &:hover {
+          background-color: var(--second-color-05);
+        }
+
+        .user {
+          background-color: white;
+          padding: 1.2rem;
+          border-radius: 50%;
+        }
+
+        &.see-more {
+
+          a {
+            background-color: var(--second-color-00);
+            padding: 0.5rem;
+            color: white;
+            display: flex;
+            place-items: center;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+  }
+
+  .second-section {
+
+    .edit {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        text-decoration: none;
+        color: var(--first-color-10);
+        padding: 0.5rem;
+        border-radius: 0.2rem;
+
+        &:hover {
+          background-color: var(--second-color-00);
+          padding: 0.5rem;
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+
+      li {
+        display: flex;
+        gap: 0.8rem;
+        align-items: center;
+        font-weight: 500;
+        padding: 0 0.5rem;
+
+        div {
+          padding: 1.3rem;
+          background-color: white;
+          border-radius: 50%;
+        }
+
+        &.see-more {
+
+          a {
+            background-color: var(--second-color-00);
+            padding: 0.5rem;
+            color: white;
+            display: flex;
+            place-items: center;
+            border-radius: 50%;
+          }
+
+        }
+      }
+    }
+  }
+
+  .third-section {
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+      list-style: none;
+      gap: 0.8rem;
+      li {
+        cursor: pointer;
+        opacity: 0.5;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+
+}

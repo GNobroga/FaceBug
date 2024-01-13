@@ -11,7 +11,13 @@
 
 :root {
   --first-color: #0866FF;
+  --first-color-10: #527AA9;
   --second-color-00: #3A3B3C;
   --second-color-05: #c0c4c745;
   --second-color-10: #242526;
+  --second-color-15: #18191A;
+}
+
+html, body {
+  height: 100%;
 }
