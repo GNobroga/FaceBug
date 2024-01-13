@@ -3,14 +3,13 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import IApplicationState from 'types/IApplicationState';
-import * as counterActions from '@store/counter.actions';
-import ShowCountComponent from 'show-count/show-count.component';
-import { LoginFormComponent } from 'login-form/login-form.component';
+import * as counterActions from '@store/counter.actions';import { HeaderComponent } from 'components/header/header.component';
+;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, ShowCountComponent, LoginFormComponent],
+  imports: [CommonModule, RouterOutlet, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })

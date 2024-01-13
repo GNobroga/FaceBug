@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+
+:root {
+  --first-color: #0866FF;
+  --second-color-00: #3A3B3C;
+  --second-color-05: #c0c4c745;
+  --second-color-10: #242526;
+}
