@@ -8,4 +8,4 @@ Estou testando a biblioteca Ngrx/store que permite gerenciar estados globais den
 Para isso vou copiar o layout do facebook e aplicar lógica utilizando Global state.
 
 
-![Alt text](image-1.png)
+![Alt text](image-2.png)
