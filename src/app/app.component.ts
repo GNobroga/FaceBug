@@ -4,17 +4,12 @@ import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import IApplicationState from 'types/IApplicationState';
 import * as counterActions from '@store/counter.actions';import { HeaderComponent } from 'components/header/header.component';
-import { SidebarComponent } from 'components/sidebar/sidebar.component';
-import { ContentComponent } from 'components/content/content.component';
-;
-
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, SidebarComponent, ContentComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  imports: [CommonModule, RouterOutlet],
+  template: '<router-outlet/>'
 })
 export class AppComponent {
   #store = inject(Store<IApplicationState>);
