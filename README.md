@@ -1,6 +1,6 @@
-# Global State
+# Clone Facebook
 
-Estou clonando o layout do facebook para testar a biblioteca Ngrx que permite gerenciar um estado global para aplicação, semelhante ao Redux e Zustand.
+O objetivo desse projeto é clonar o layout do Facebook, criar um backend utilizando C# com o framework ASP .NET e utilizar Ngrx pra ter controle do estado da aplicação. Nesse projeto eu não utilizo nenhum framework ou biblioteca de componentização ou estilização, pretendo e vou desenvolver manualmente.
 
 ![Alt text](image.png)
 
