@@ -1,0 +1,22 @@
+:host {
+  flex: 1;
+  min-width: 150px;
+
+  li {
+    background-color: var(--white-color-100);
+    flex: 1;
+    border-radius: 0.5rem;
+    position: relative;
+    cursor: pointer;
+    height: 100%;
+
+    .user {
+      position: absolute;
+      left: 8%;
+      border: 3px solid var(--first-color);
+      padding: 1rem;
+      border-radius: 50%;
+      margin-top: 1rem;
+    }
+  }
+}

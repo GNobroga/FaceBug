@@ -1,4 +1,7 @@
 :host {
+  max-height: 100vh;
+  overflow: hidden;
+  overflow-y: auto;
 
   aside {
     background-color: var(--second-color-15);

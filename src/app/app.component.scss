@@ -6,10 +6,15 @@
     flex-direction: column;
     background-color: var(--second-color-15);
 
+
     .grid {
       flex: 1;
       display: grid;
-      grid-template-columns: 0.620fr 1fr 0.434fr;
+      grid-template-columns: 0.600fr 1fr 0.500fr;
+    }
+
+    .limit {
+      max-width: 600px;
     }
   }
 }

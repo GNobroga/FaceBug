@@ -8,6 +8,7 @@ import { SidebarComponent } from 'components/sidebar/sidebar.component';
 import { ContentComponent } from 'components/content/content.component';
 ;
 
+
 @Component({
   selector: 'app-root',
   standalone: true,

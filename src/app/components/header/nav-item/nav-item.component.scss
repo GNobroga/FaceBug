@@ -30,6 +30,7 @@
     &.active {
       color: var(--first-color);
 
+
       &::after {
         background-color: var(--first-color);
       }

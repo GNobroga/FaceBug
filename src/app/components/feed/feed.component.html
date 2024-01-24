@@ -1,23 +1,35 @@
-<ul class="feed">
-  <li class="create-story">
-   <div>
-      <button>
-        <span>+</span>
-      </button>
-      <span>Create story</span>
-   </div>
-  </li>
-  <li>
-    <div class="user"></div>
-  </li>
-  <li>
-    <div class="user"></div>
-  </li>
-  <li>
-    <div class="user"></div>
-  </li>
-</ul>
 
-<div class="arrow-right">
-  <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--secondary-icon);"><path d="M9.209 5.207 16 12l-6.791 6.793a1 1 0 1 0 1.415 1.414l7.5-7.5a1 1 0 0 0 0-1.414l-7.5-7.5a1 1 0 1 0-1.415 1.414z"></path></svg>
+<div class="area-feed">
+
+  @if (!feedMoveLeftShow()) {
+    <div class="create">
+      <div>
+        <button>
+          <span>+</span>
+        </button>
+        <span>Criar um Story</span>
+      </div>
+  </div>
+  }
+
+  <ul class="feed" #feed>
+    <app-feed-item/>
+    <app-feed-item/>
+    <app-feed-item/>
+    <app-feed-item/>
+    <app-feed-item/>
+    <app-feed-item/>
+  </ul>
+
+  @if (feedMoveLeftShow()) {
+    <div class="arrow-left" (click)="moveScroll('left')">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--secondary-icon);"><path d="M9.209 5.207 16 12l-6.791 6.793a1 1 0 1 0 1.415 1.414l7.5-7.5a1 1 0 0 0 0-1.414l-7.5-7.5a1 1 0 1 0-1.415 1.414z"></path></svg>
+    </div>
+  }
+
+  <div class="arrow-right" (click)="moveScroll('right')">
+    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color: var(--secondary-icon);"><path d="M9.209 5.207 16 12l-6.791 6.793a1 1 0 1 0 1.415 1.414l7.5-7.5a1 1 0 0 0 0-1.414l-7.5-7.5a1 1 0 1 0-1.415 1.414z"></path></svg>
+  </div>
+
 </div>
+

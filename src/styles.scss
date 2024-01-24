@@ -16,8 +16,10 @@
   --second-color-05: #c0c4c745;
   --second-color-10: #242526;
   --second-color-15: #18191A;
+  --white-color-100: #fff;
 }
 
 html, body {
   height: 100%;
+  background-color: var(--second-color-15);
 }
