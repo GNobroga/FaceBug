@@ -1,6 +1,8 @@
 # Global State
 
-Criando uma clone do facebook
+Estou clonando o layout do facebook para testar a biblioteca Ngrx que permite gerenciar um estado global para aplicação, semelhante ao Redux e Zustand.
+
+![Alt text](image.png)
 
 ## Tecnologias
 
