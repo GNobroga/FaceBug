@@ -1,0 +1,40 @@
+:host {
+  li {
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.4rem 2rem;
+    border-radius: 0.5rem;
+
+    img {
+      filter: invert(1);
+      opacity: 0.8;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: transparent;
+      height: 4px;
+      width: 100px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    &:hover {
+      background-color: var(--second-color-05);
+    }
+
+    &.active {
+      color: var(--first-color);
+
+      &::after {
+        background-color: var(--first-color);
+      }
+
+    }
+  }
+
+}

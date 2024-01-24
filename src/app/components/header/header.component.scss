@@ -8,6 +8,10 @@
     padding: 0.4rem 1rem;
     position: relative;
 
+    img {
+      filter: invert(1);
+    }
+
 
     ul {
       list-style: none;
@@ -46,13 +50,9 @@
         border-radius: 1rem;
         color: #fff;
 
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: currentColor;
+        img {
           margin-left: 0.5rem;
-          opacity: 0.5;
+          opacity: 0.8;
         }
 
         input {
@@ -95,43 +95,6 @@
         justify-content: center;
         gap: 2rem;
         height: inherit;
-
-        li {
-          cursor: pointer;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          padding: 0 2rem;
-
-          border-radius: 0.5rem;
-
-
-
-
-         &::after {
-          content: "";
-          display: block;
-          background-color: transparent;
-          height: 4px;
-          width: 100px;
-          position: absolute;
-          bottom: 0;
-         }
-
-         &:hover {
-          background-color: var(--second-color-05);
-         }
-
-         &.active {
-          color: var(--first-color);
-
-          &::after {
-            background-color: var(--first-color);
-          }
-
-         }
-        }
       }
     }
 

@@ -1,0 +1,8 @@
+:host {
+  ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

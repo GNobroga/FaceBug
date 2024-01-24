@@ -15,42 +15,35 @@
   }
   .first-section {
 
-    ul {
-      display: flex;
-      list-style: none;
-      flex-direction: column;
-      gap: 0.5rem;
 
-      li {
+      .show-user-name {
         display: flex;
-        place-items: center;
+        align-items: center;
         gap: 0.8rem;
-        cursor: pointer;
         padding: 0.5rem;
-        border-radius: 0.5rem;
-
-        &:hover {
-          background-color: var(--second-color-05);
-        }
 
         .user {
           background-color: white;
           padding: 1.2rem;
           border-radius: 50%;
         }
-
-        &.see-more {
-
-          a {
-            background-color: var(--second-color-00);
-            padding: 0.5rem;
-            color: white;
-            display: flex;
-            place-items: center;
-            border-radius: 50%;
-          }
-        }
       }
+
+      .see-more {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        padding: 0.5rem;
+        cursor: pointer;
+
+        a {
+          background-color: var(--second-color-00);
+          padding: 0.5rem;
+          color: white;
+          display: flex;
+          place-items: center;
+          border-radius: 50%;
+        }
     }
   }
 

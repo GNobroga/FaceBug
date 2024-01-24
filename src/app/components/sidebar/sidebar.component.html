@@ -1,42 +1,24 @@
 <aside>
   <div class="first-section">
-    <ul>
-      <li>
-        <div class="user"></div>
-        Gabriel Cardoso
-      </li>
-      <li>
-        <div style="background-image:url('/assets/icons/icons.png');background-position:0 -38px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></div>
-        <span>Groups</span>
-      </li>
-      <li>
-        <div style="background-image:url('/assets/icons/icons.png');background-position:0 -304px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></div>
-        <span>Friends</span>
-      </li>
-      <li>
-        <div style="background-image:url('/assets/icons/icons.png');background-position:0 -456px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></div>
-        <span>Memories</span>
-      </li>
-      <li>
-        <div style="background-image:url('/assets/icons/icons.png');background-position:0 -190px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></div>
-        <span>Saved</span>
-      </li>
-      <li>
-        <div style="background-image:url('/assets/icons/icons.png');background-position:0 -532px;background-size:38px 570px;width:36px;height:36px;background-repeat:no-repeat;display:inline-block"></div>
-        <span>Video</span>
-      </li>
-      <li class="see-more">
-        <a href="">
-          <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor">
-            <g fill-rule="evenodd" transform="translate(-448 -544)">
-              <path fill-rule="nonzero"
-                d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z"></path>
-            </g>
-          </svg>
-        </a>
-        <span>See more</span>
-      </li>
-    </ul>
+    <div class="show-user-name">
+      <div class="user"></div>
+      Gabriel Cardoso
+    </div>
+    <app-sidebar-list [items]="sidebarFirstAreaItems"/>
+
+    <div class="see-more">
+      <a href="">
+        <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor">
+          <g fill-rule="evenodd" transform="translate(-448 -544)">
+            <path fill-rule="nonzero"
+              d="M452.707 549.293a1 1 0 0 0-1.414 1.414l4 4a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L456 552.586l-3.293-3.293z"></path>
+          </g>
+        </svg>
+      </a>
+      <span>See more</span>
+    </div>
+
+
   </div>
   <hr class="divider">
   <div class="second-section">

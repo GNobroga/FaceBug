@@ -1,0 +1,15 @@
+:host {
+  li {
+    display: flex;
+    place-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+
+
+      &:hover {
+        background-color: var(--second-color-05);
+      }
+  }
+}

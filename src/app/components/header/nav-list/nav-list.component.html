@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    @for (menu of menus; track menu) {
+      <app-nav-item  [imageSource]="menu.imageSource" [imageAlt]="menu.imageSource"/>
+    }
+  </ul>
+</nav>
