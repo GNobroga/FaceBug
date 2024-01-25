@@ -1,7 +1,27 @@
 :host {
+  &::after {
+    content: "";
+    display: block;
+    background-color: transparent;
+    height: 3px;
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-5%);
+  }
+
+  &.active {
+    &::after {
+      background-color: var(--first-color);
+    }
+
+    img {
+      filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(180deg) !important;
+    }
+  }
+
   li {
     cursor: pointer;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,16 +33,6 @@
       opacity: 0.8;
     }
 
-    &::after {
-      content: "";
-      display: block;
-      background-color: transparent;
-      height: 4px;
-      width: 100px;
-      position: absolute;
-      bottom: 0;
-    }
-
     &:hover {
       background-color: var(--second-color-05);
     }
@@ -30,12 +40,9 @@
     &.active {
       color: var(--first-color);
 
-
       &::after {
         background-color: var(--first-color);
       }
-
     }
   }
-
 }

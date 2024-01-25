@@ -1,0 +1,50 @@
+:host {
+  position: fixed;
+  right: 0;
+  max-width: 30vw;
+  width: 100%;
+
+  .container {
+    width: 100%;
+    color: var(--white-color-100);
+    padding: 1rem;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    h1 {
+      font-size: 1.2rem;
+    }
+
+    button {
+      outline: none;
+      border: none;
+      background-color: transparent;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      cursor: pointer;
+      position: relative;
+      bottom: 0.4rem;
+
+      img {
+        filter: invert(1);
+      }
+
+      &:hover {
+        background-color: var(--second-color-05);
+      }
+    }
+  }
+
+  .contacts {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

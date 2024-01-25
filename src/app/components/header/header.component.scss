@@ -1,12 +1,16 @@
 :host {
-
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100vw;
   header {
     display: flex;
     justify-content: space-between;
     background-color: var(--second-color-10);
     color: #fff;
     padding: 0.4rem 1rem;
-    position: relative;
+    padding-right: 2rem;
 
     img {
       filter: invert(1);

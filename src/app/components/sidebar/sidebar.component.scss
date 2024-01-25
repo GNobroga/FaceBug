@@ -2,6 +2,9 @@
   max-height: 100vh;
   overflow: hidden;
   overflow-y: auto;
+  position: fixed;
+  z-index: 98;
+  margin-top: 3rem;
 
   aside {
     background-color: var(--second-color-15);

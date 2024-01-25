@@ -10,6 +10,8 @@ O objetivo desse projeto é clonar o layout do Facebook, criar um backend utiliz
 
 ![Alt text](image-2.png)
 
+![Alt text](image-4.png)
+
 ## Tecnologias
 
 - Ngrx

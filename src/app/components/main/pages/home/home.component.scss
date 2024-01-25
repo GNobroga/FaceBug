@@ -1,20 +1,17 @@
 :host {
 
-  .app {
-    height: 100%;
+  .center {
     display: flex;
-    flex-direction: column;
-    background-color: var(--second-color-15);
+    padding-top: 4rem;
 
-
-    .grid {
-      flex: 1;
-      display: grid;
-      grid-template-columns: 0.600fr 1fr 0.500fr;
+    .hidden {
+      flex: 0.470;
     }
 
-    .limit {
+    app-content {
       max-width: 600px;
     }
   }
+
+
 }

@@ -1,0 +1,20 @@
+:host {
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    cursor: pointer;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+
+    &:hover {
+      background-color: var(--second-color-05);
+    }
+
+    .perfil {
+      padding: 1.2rem;
+      background-color: var(--white-color-100);
+      border-radius: 50%;
+    }
+  }
+}
