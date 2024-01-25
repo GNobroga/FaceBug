@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { ContactComponent } from './contact/contact.component';
 
 @Component({
@@ -10,4 +10,9 @@ import { ContactComponent } from './contact/contact.component';
 })
 export class ContactsComponent {
 
+  openSearchInput = signal(false);
+
+  toggleSearchInput() {
+    this.openSearchInput.set(!this.openSearchInput());
+  }
 }

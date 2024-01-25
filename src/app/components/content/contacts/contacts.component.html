@@ -1,9 +1,12 @@
 <div class="container">
   <header>
     <h1>Contatos</h1>
-    <button>
-      <img src="assets/icons/header/search.svg" alt="Search">
-    </button>
+   <div>
+      <button (click)="toggleSearchInput()">
+        <img src="assets/icons/header/search.svg" alt="Search">
+      </button>
+      <input type="text" placeholder="Pesquisar" class="{{openSearchInput() ? 'open' : ''}}">
+   </div>
   </header>
   <ul class="contacts">
     <app-contact/>

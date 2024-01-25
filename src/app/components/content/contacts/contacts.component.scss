@@ -1,7 +1,7 @@
 :host {
   position: fixed;
   right: 0;
-  max-width: 30vw;
+  max-width: 29vw;
   width: 100%;
 
   .container {
@@ -13,6 +13,7 @@
   header {
     display: flex;
     justify-content: space-between;
+
     h1 {
       font-size: 1.2rem;
     }
@@ -38,6 +39,34 @@
       &:hover {
         background-color: var(--second-color-05);
       }
+    }
+
+    div {
+      display: flex;
+      gap: 0.5rem;
+
+      input {
+        display: none;
+        position: relative;
+        bottom: 0.3rem;
+        outline: none;
+        border: none;
+        padding: 0 0.8rem;
+        background-color: var(--second-color-05);
+        color: #fff;
+        border-radius: 1rem;
+        &::placeholder {
+          color: var(--white-color-100);
+          opacity: 0.8;
+        }
+
+        &.open {
+          display: block;
+        }
+      }
+
+
+
     }
   }
 

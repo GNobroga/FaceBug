@@ -1,0 +1,56 @@
+$background-urls: "config.png", "help.png", "theme.png", "alert.png", "leave.png";
+
+:host(.open) {
+  display: block;
+}
+
+:host {
+  display: none;
+  height: 0;
+
+
+  ul {
+    background-color: var(--second-color-10);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 3px #3333337d;
+    transition: all 0.5s ease-in;
+
+    li {
+      display: flex;
+      gap: 0.8rem;
+      align-items: center;
+      padding: 0.5rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--second-color-05);
+      }
+    }
+  }
+
+  .icon {
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    filter: invert(1);
+    background-position: center;
+  }
+
+  @for $i from 1 through length($background-urls) {
+    .icon-#{$i} {
+      background-image: url("/assets/icons/header/#{nth($background-urls, $i)}");
+    }
+  }
+
+  span {
+    color: var(--white-color-100);
+    position: relative;
+    bottom: 0.1rem;
+  }
+
+}

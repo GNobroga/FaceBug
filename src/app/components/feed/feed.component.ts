@@ -17,7 +17,7 @@ export class FeedComponent implements AfterViewInit {
 
   feedMoveLeftShow = signal(false);
 
-  currentScrollPositionX = 150;
+  currentScrollPositionX = 300;
 
   public ngAfterViewInit() {
     const feed = this.feedRef.nativeElement as HTMLElement;

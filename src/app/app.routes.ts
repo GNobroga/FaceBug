@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import RegisterComponent from 'components/account/pages/register/register.component';
 
 export const routes: Routes = [
   {
@@ -7,7 +8,7 @@ export const routes: Routes = [
     children: [
       {
         path: 'register',
-        loadComponent: () => import('./components/account/pages/register/register.component'),
+        component: RegisterComponent
       }
     ],
   },

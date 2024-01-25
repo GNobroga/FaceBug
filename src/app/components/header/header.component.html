@@ -4,7 +4,7 @@
     <div class="logo"></div>
     <div class="search">
       <img src="assets/icons/header/search.svg" alt="">
-      <input type="search" name="search" placeholder="Search Facebook">
+      <input type="text" name="search" placeholder="Pesquisar Facebook">
     </div>
   </div>
   <div class="second-section">
@@ -22,11 +22,13 @@
       <li>
         <img src="assets/icons/header/notifications.svg" alt="Notifications">
       </li>
-      <li class="account">
-          <a href="#">
+      <li class="account" (click)="toggleMenu()">
+          <a>
             <img src="assets/icons/header/arrow-down.svg" alt="Arrow">
           </a>
       </li>
     </ul>
   </div>
 </header>
+
+<app-menu class="{{ openMenu() ? 'open' : '' }}"/>

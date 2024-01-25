@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import NavListComponent, { INavMenu } from './nav-list/nav-list.component';
+import { MenuComponent } from './menu/menu.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NavListComponent],
+  imports: [NavListComponent, MenuComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
@@ -32,4 +33,12 @@ export class HeaderComponent {
       imageAlt: 'Groups'
     }
   ];
+
+  openMenu = signal(false);
+
+  toggleMenu() {
+    this.openMenu.set(!this.openMenu());
+  }
+
+
 }

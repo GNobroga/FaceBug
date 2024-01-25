@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { ChangeDetectionStrategy, Component, Input } from "@angular/core";
 import { ISidebarItem } from "../sidebar-list/sidebar-list.component";
 import { NgStyle } from "@angular/common";
 
@@ -7,7 +7,8 @@ import { NgStyle } from "@angular/common";
   templateUrl: './sidebar-item.component.html',
   styleUrl: './sidebar-item.component.scss',
   standalone: true,
-  imports: [NgStyle]
+  imports: [NgStyle],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class SidebarItem {
 
@@ -15,7 +16,6 @@ export default class SidebarItem {
 
   public getStyle() {
     const { imageSource: img, position } = this.item;
-    console.log(img)
     return { backgroundImage: `url(${img})`, backgroundPosition: `${position.x}px ${position.y}px`};
   }
 }
