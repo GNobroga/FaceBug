@@ -1,9 +1,7 @@
 :host {
 
   .content {
-    max-height: calc(100vh - 3rem);
-    overflow: hidden;
-    overflow-y: auto;
+
     height: 100%;
     background-color: var(--second-color-15);
     display: flex;

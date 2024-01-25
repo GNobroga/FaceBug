@@ -27,3 +27,25 @@ html, body {
   height: 100%;
   background-color: var(--second-color-15);
 }
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #D1D1D1;
+  border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: lighten(#D1D1D1, 50%);
+}
