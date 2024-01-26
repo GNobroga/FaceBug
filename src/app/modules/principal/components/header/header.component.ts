@@ -1,4 +1,4 @@
-import { Component, signal } from '@angular/core';
+import { Component, EventEmitter, Output, signal } from '@angular/core';
 import { INavMenu } from '../nav-list/nav-list.component';
 
 @Component({
@@ -33,8 +33,15 @@ export class HeaderComponent {
 
   openMenu = signal(false);
 
+  @Output()
+  onShowSidebar = new EventEmitter();
+
   toggleMenu() {
     this.openMenu.set(!this.openMenu());
+  }
+
+  toggleShowSidebar() {
+    this.onShowSidebar.emit();
   }
 
 

@@ -3,7 +3,10 @@
     @for (menu of menus; let i = $index; track menu) {
       @if (i == 0) {
         <app-nav-item class="active"  [imageSource]="menu.imageSource" [imageAlt]="menu.imageSource"/>
-      } @else {
+      } @else if (i > 3) {
+        <app-nav-item class="tw-hidden xl:tw-flex"  [imageSource]="menu.imageSource" [imageAlt]="menu.imageSource"/>
+      }
+      @else {
         <app-nav-item  [imageSource]="menu.imageSource" [imageAlt]="menu.imageSource"/>
       }
 

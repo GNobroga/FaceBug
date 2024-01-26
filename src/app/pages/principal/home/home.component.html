@@ -1,10 +1,10 @@
 <div class="home">
-  <app-header />
-  <app-sidebar />
+  <app-header (onShowSidebar)="showSidebar.set(!showSidebar())" />
+  <app-sidebar class="tw-hidden xl:tw-block" [ngClass]="{ 'show-sidebar': showSidebar() }" />
   <div class="wrapper">
     <div class="hidden"></div>
-    <app-content />
-    <div class="contacts-and-groups tw-flex tw-flex-col tw-gap-3 tw-scroll-smooth">
+    <app-content/>
+    <div class="contacts-and-groups xl:tw-flex tw-flex-col tw-gap-3 tw-scroll-smooth tw-hidden">
       <app-contacts/>
       <div class="tw-border tw-opacity-30"></div>
       <app-groups/>
