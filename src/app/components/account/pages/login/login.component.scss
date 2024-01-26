@@ -1,10 +1,21 @@
 :host {
+  width: 100vw;
+
   .container {
-    height: 100%;
+    position: relative;
+    overflow: hidden;
+    overflow-x: auto;
+    width: 100%;
+    min-height: 100vh;
     background-color: var(--white-color-200);
     display: flex;
     justify-content: center;
+    padding: 0 3rem;
     padding-top: 8rem;
+
+    @media only screen and (max-width: 50rem) {
+      padding-top: 0;
+    }
   }
 
   .limit {
@@ -12,6 +23,16 @@
     display: grid;
     grid-template-columns: 1fr 0.7fr;
     flex: 1;
+    gap: 4rem;
+
+    @media only screen and (max-width: 50rem) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 1rem;
+      .activities {
+        justify-content: center;
+      }
+    }
   }
 
     .login {
@@ -48,12 +69,14 @@
       border-radius: 0.5rem;
       box-shadow: 0 0 5px #33333334;
 
+
       input {
         padding: 0 1rem;
         border: none;
         border: 1px solid  var(--grey-color-100);
         outline: none;
         opacity: 0.9;
+        width: 100%;
 
         &::placeholder {
          font-size: 1.2rem;

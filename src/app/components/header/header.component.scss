@@ -116,11 +116,13 @@
         li {
           cursor: pointer;
           background-color: var(--second-color-00);
-          padding: 0.7rem;
+          width: 38px;
+          height: 38px;
           border-radius: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
+
 
           &:hover {
             background-color: var(--second-color-05);
@@ -130,7 +132,6 @@
             position: relative;
             color: #333;
             background-color: white;
-            padding: 0 1.3rem;
 
             a {
               position: absolute;

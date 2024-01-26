@@ -1,5 +1,11 @@
 <section class="content">
   <app-feed/>
-  <app-comment-box/>
+  <app-comment-box (onMenuOpen)="togglePostModal()"/>
   <app-posts/>
 </section>
+
+@if (openPostModal()) {
+  <app-create-post (closeModal)="togglePostModal()"/>
+}
+
+

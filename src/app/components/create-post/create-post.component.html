@@ -1,0 +1,21 @@
+<div class="container tw-p-4 tw-flex tw-flex-col tw-gap-3 tw-rounded-md" style="background-color: var(--second-color-10);">
+  <header class="tw-flex tw-items-center tw-text-white">
+    <h1 class="tw-flex-1 tw-text-center tw-font-bold tw-text-lg">Criar postagem</h1>
+    <div class="close tw-flex tw-items-center hover:tw-bg-light-100  tw-bg-black-100 tw-cursor-pointer  tw-rounded-full tw-justify-center" (click)="close()">
+      <img src="assets/icons/close.png" alt="" style="filter: invert(1)">
+    </div>
+  </header>
+  <div class="tw-divide-y tw-divide-white"></div>
+  <div class="tw-flex tw-text-white tw-gap-2">
+    <div class="perfil tw-p-5 tw-rounded-full tw-bg-white"></div>
+    <h2>Gabriel Cardoso</h2>
+  </div>
+  <textarea placeholder="O que você está pensando?" class="tw-resize-none tw-text-white tw-mt-3 tw-p-2 tw-bg-transparent tw-outline-none tw-text-2xl"></textarea>
+  <div class="tw-flex tw-justify-between tw-text-white tw-border tw-rounded-md tw-items-center tw-p-3">
+    <h2 class="tw-text-sm tw-font-bold">Adicionar Foto ou Vídeo</h2>
+   <div class="hover:tw-bg-light-100 tw-flex tw-items-center tw-justify-center tw-rounded-full" style="width: 50px; height: 50px;">
+      <img src="assets/icons/comment/photos.png" alt width="24" class="tw-cursor-pointer">
+   </div>
+  </div>
+  <button class="tw-bg-light-100 hover:tw-opacity-80 tw-text-white tw-opacity-70 tw-p-2 tw-rounded-md tw-mt-2">Postar</button>
+</div>

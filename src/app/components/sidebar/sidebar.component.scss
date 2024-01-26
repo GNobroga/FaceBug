@@ -4,7 +4,13 @@
   overflow-y: auto;
   position: fixed;
   z-index: 98;
-  margin-top: 3rem;
+  overflow: hidden;
+  padding-top: 3rem;
+
+  &:hover {
+    overflow-y: auto;
+  }
+
 
   aside {
     background-color: var(--second-color-15);
@@ -14,9 +20,14 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    padding-bottom: 5rem;
 
     .divider {
       opacity: 0.2;
+    }
+
+    @media (max-width: 60rem) {
+      display: none;
     }
   }
   .first-section {
@@ -26,7 +37,7 @@
         display: flex;
         align-items: center;
         gap: 0.8rem;
-        padding: 0.5rem;
+        padding: 0.6rem;
 
         .user {
           background-color: white;
@@ -83,16 +94,16 @@
         gap: 0.8rem;
         align-items: center;
         font-weight: 500;
-        padding: 0 0.5rem;
+        padding: 0.5rem;
 
         div {
-          padding: 1.3rem;
+          padding: 1.1rem;
           background-color: white;
           border-radius: 50%;
         }
 
         &.see-more {
-
+          padding: 0.5rem;
           a {
             background-color: var(--second-color-00);
             padding: 0.5rem;

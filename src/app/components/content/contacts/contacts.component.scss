@@ -1,13 +1,19 @@
 :host {
   position: fixed;
+  top: 0;
   right: 0;
   max-width: 29vw;
   width: 100%;
+  padding-top: 3.5rem;
 
   .container {
     width: 100%;
     color: var(--white-color-100);
     padding: 1rem;
+
+    @media (max-width: 80rem) {
+      display: none;
+    }
   }
 
   header {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-comment-box',
@@ -9,4 +9,10 @@ import { Component } from '@angular/core';
 })
 export class CommentBoxComponent {
 
+  @Output("onMenuOpen")
+  menuOpen = new EventEmitter(false);
+
+  openMenuPost() {
+    this.menuOpen.emit();
+  }
 }

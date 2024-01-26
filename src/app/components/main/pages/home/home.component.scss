@@ -1,15 +1,29 @@
 :host {
 
-  .center {
-    display: flex;
+  .wrapper {
     padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    justify-items: center;
 
     .hidden {
-      flex: 0.470;
+      flex: 0.5fr;
+    }
+
+    app-content {
+      flex: 1;
     }
 
     app-content {
       max-width: 600px;
+    }
+
+    @media (max-width: 80rem) {
+      grid-template-columns: 1fr;
+
+      app-content {
+        max-width: 80%;
+      }
     }
   }
 

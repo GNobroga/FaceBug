@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
   padding: 0;
@@ -23,11 +25,14 @@
   --green-color-100: #36A420;
 }
 
-html, body {
+html {
   height: 100%;
-  background-color: var(--second-color-15);
 }
 
+body {
+  min-height: 100vh;
+  background-color: var(--second-color-15);
+}
 
 
 ::-webkit-scrollbar {

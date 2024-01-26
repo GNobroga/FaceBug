@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
+  min-width: 320px;
 
   form {
     background-color: var(--white-color-100);
@@ -141,17 +143,21 @@
   }
 
   .terms {
-    display: flex;
     flex: 1;
     gap: 1rem;
     flex-direction: column;
     padding: 0 1rem;
+    display: flex;
 
     p {
       word-break: break-all;
       word-wrap: break-word;
       font-size: 0.8rem;
       text-align: start;
+    }
+
+    @media (max-width: 60rem) {
+      display: none;
     }
   }
 
