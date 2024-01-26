@@ -1,0 +1,37 @@
+
+<header>
+  <div class="first-section">
+    <div class="logo"></div>
+    <div class="search">
+      <img src="assets/icons/header/search.svg" alt="">
+      <input type="text" name="search" placeholder="Pesquisar Facebook">
+    </div>
+  </div>
+  <div class="second-section">
+    <app-nav-list [menus]="navigations"/>
+  </div>
+
+  <div class="third-section">
+    <ul>
+      <li>
+        <img src="assets/icons/header/menu.svg" alt="Menu">
+      </li>
+      <li class="tw-relative">
+        <img src="assets/icons/header/messager.svg" alt="Messager">
+        <span style="height: 18px; width: 16px; top: -0.4rem; right: 0" class="tw-absolute tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-red-500 ">
+          1
+        </span>
+      </li>
+      <li>
+        <img src="assets/icons/header/notifications.svg" alt="Notifications">
+      </li>
+      <li class="account" (click)="toggleMenu()">
+          <a>
+            <img src="assets/icons/header/arrow-down.svg" alt="Arrow">
+          </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<app-header-menu class="{{ openMenu() ? 'open' : '' }}"/>
