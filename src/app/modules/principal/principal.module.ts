@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CommentBoxComponent } from '@principal-components/comment-box/comment-box.component';
 import { ContactComponent } from '@principal-components/contact/contact.component';
@@ -41,7 +42,9 @@ import { SidebarComponent } from '@principal-components/sidebar/sidebar.componen
     SidebarItem,
     SidebarListComponent
   ],
-  imports: [],
+  imports: [
+    CommonModule
+  ],
   exports: [
     CommentBoxComponent,
     ContactComponent,

@@ -3,11 +3,11 @@ import RegisterComponent from 'pages/account/register/register.component';
 
 export const routes: Routes = [
   {
-    path: 'account',
+    path: 'login',
     loadComponent: () => import('./pages/account/login/login.component'),
     children: [
       {
-        path: 'create',
+        path: '',
         component: RegisterComponent
       }
     ],
@@ -19,6 +19,10 @@ export const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    redirectTo: 'account'
+    redirectTo: 'login'
+  },
+  {
+    path: '**',
+    redirectTo: 'login',
   }
 ];

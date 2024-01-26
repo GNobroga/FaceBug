@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Store } from '@ngrx/store';
 import IApplicationState from 'types/IApplicationState';
-import * as counterActions from '@store/counter.actions';import { HeaderComponent } from 'components/header/header.component';
+import * as counterActions from '@store/counter.actions';
 
 @Component({
   selector: 'app-root',
