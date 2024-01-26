@@ -5,7 +5,8 @@
     "outDir": "./dist/out-tsc",
     "baseUrl": "src/app",
     "paths": {
-      "@store/*": ["store/*"]
+      "@store/*": ["store/*"],
+      "@principal-components/*": ["modules/principal/components/*"]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
