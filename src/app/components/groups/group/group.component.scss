@@ -1,0 +1,26 @@
+:host {
+  .group {
+    width: 30px;
+    height: 30px;
+    top: 8px;
+    left: 5px;
+
+    .group-intern {
+      width: inherit;
+      height: inherit;
+      top: -1.2rem;
+      right: -1rem;
+      z-index: -1;
+    }
+
+    .status {
+      height: 10px;
+      width: 10px;
+      border: 1px solid blue;
+      top: 0.5rem;
+      right: -0.9rem;
+      bottom: 50%;
+      transform: translateY(50%);
+    }
+  }
+}
