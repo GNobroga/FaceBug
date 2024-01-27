@@ -2,7 +2,7 @@
   class="wrapper tw-flex tw-gap-5 tw-container tw-px-3 tw-pt-5 tw-justify-center"
 >
   <div class="tw-flex-col tw-hidden md:tw-flex">
-    <p class="tw-text-pretty tw-font-extrabold">
+    <p class="tw-text-pretty">
       O Facebook ajuda você a se conectar e compartilhar com as pessoas que
       fazem parte da sua vida
     </p>
@@ -13,11 +13,11 @@
     <h2 class="tw-text-xl">É gratuito e sempre será</h2>
     <form class="tw-flex tw-gap-3 tw-flex-col tw-mt-2 tw-opacity-90">
       <div class="tw-flex tw-gap-3 tw-flex-wrap">
-        <input class="tw-px-2 tw-flex-1" type="text" placeholder="Nome" />
-        <input class="tw-px-2 tw-flex-1" type="text" placeholder="Sobrenome" />
+        <input class="tw-px-2 tw-flex-1" pInputText type="text" placeholder="Nome" />
+        <input class="tw-px-2 tw-flex-1" pInputText type="text" placeholder="Sobrenome" />
       </div>
-      <input class="tw-px-2" type="text" placeholder="E-mail" />
-      <input class="tw-px-2" type="text" placeholder="Nova senha" />
+      <input class="tw-px-2" type="text" pInputText placeholder="E-mail" />
+      <input class="tw-px-2" type="text" pInputText placeholder="Nova senha" />
       <div class="tw-flex tw-flex-col tw-gap-2" style="max-width: 250px">
         <h3 class="tw-opacity-50 tw-font-bold">Data de nascimento</h3>
         <div class="tw-flex tw-flex-wrap">
@@ -36,22 +36,22 @@
         <h3 class="tw-opacity-50 tw-font-bold">Gênero</h3>
         <div class="tw-flex tw-gap-3 tw-flex-1 tw-flex-wrap">
           <div class="tw-flex tw-gap-3 tw-items-center tw-flex-1">
-            <input type="radio" name="gender" />
-            <label class="tw-text-xl tw-opacity-70">Feminino</label>
+            <p-radioButton name="gender" [(ngModel)]="name" inputId="Feminimo"></p-radioButton>
+            <label for="ingredient1" class="ml-2">Feminino</label>
           </div>
           <div class="tw-flex tw-gap-3 tw-items-center tw-flex-1">
-            <input type="radio" name="gender" />
-            <label class="tw-text-xl tw-opacity-70">Masculino</label>
+            <p-radioButton name="gender" [(ngModel)]="name" inputId="Masculino"></p-radioButton>
+            <label for="ingredient1" class="ml-2">Masculino</label>
           </div>
           <div class="tw-flex tw-gap-3 tw-items-center tw-flex-1">
-            <input type="radio" name="gender" />
-            <label class="tw-text-xl tw-opacity-70">Personalizado</label>
+            <p-radioButton name="gender" [(ngModel)]="name" inputId="Outros"></p-radioButton>
+            <label for="ingredient1" class="ml-2">Outros</label>
           </div>
         </div>
       </div>
       <button
         style="background: linear-gradient(to bottom, #48af48, #008000);"
-        class="tw-bg-green-600 hover:tw-opacity-80 tw-rounded-md tw-text-white tw-self-start tw-px-10 tw-py-2 tw-shadow-md"
+        class="tw-mt-3 tw-bg-green-600 hover:tw-opacity-80 tw-rounded-md tw-text-white tw-self-start tw-px-10 tw-py-2 tw-shadow-md"
       >
         Inscreva-se
       </button>
