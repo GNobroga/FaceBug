@@ -43,7 +43,7 @@
 
     app-content {
       max-width: 600px;
-      z-index: 999;
+      z-index: 200;
     }
 
     @media (max-width: 80rem) {
@@ -57,7 +57,7 @@
 
   .show-sidebar {
     display: block;
-    z-index: 100;
+    z-index: 1000;
     width: 100vw;
   }
 
