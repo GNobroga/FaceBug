@@ -6,19 +6,22 @@
   min-height: 100vh;
   background-color: blue;
   z-index: 100;
-  background-color: rgba(0, 0, 0, 0.311);
+  background-color: rgba(0, 0, 0, 0.713);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
 
   .container {
-    max-width: 500px;
-    width: 100%;
+   width: 40vw;
   }
 
   .close {
     width: 40px;
     height: 40px;
+  }
+
+  .border {
+    border: 0.5px solid #ffffff73;
   }
 }
