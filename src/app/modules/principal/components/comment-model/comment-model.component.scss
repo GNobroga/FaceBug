@@ -6,14 +6,16 @@
   background-color: #3333332c;
   width: 100vw;
   height: 100vh;
-  z-index: 999999 !important;
+  z-index: 9999;
   display: flex;
   justify-content: center;
+  margin-top: 4rem;
 
   section {
     max-width: 50vw;
     align-self: start;
     background-color: var(--second-color-10);
+
 
     header {
       img {

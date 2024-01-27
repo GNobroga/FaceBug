@@ -10,16 +10,13 @@ import { FeedItemComponent } from '@principal-components/feed-item/feed-item.com
 import { FeedComponent } from '@principal-components/feed/feed.component';
 import { GroupComponent } from '@principal-components/group/group.component';
 import { GroupsComponent } from '@principal-components/groups/groups.component';
-import { HeaderMenuComponent } from '@principal-components/header-menu/header-menu.component.';
-import { HeaderComponent } from '@principal-components/header/header.component';
-import NavItemComponent from '@principal-components/nav-item/nav-item.component';
-import NavListComponent from '@principal-components/nav-list/nav-list.component';
 import { PostComponent } from '@principal-components/post/post.component';
 import { PostsComponent } from '@principal-components/posts/posts.component';
 import SidebarItem from '@principal-components/sidebar-item/sidebar-item.component';
 import SidebarListComponent from '@principal-components/sidebar-list/sidebar-list.component';
 import { SidebarComponent } from '@principal-components/sidebar/sidebar.component';
 import { CommentModelComponent } from './components/comment-model/comment-model.component';
+import SharedModule from 'modules/shared/shared.module';
 
 
 @NgModule({
@@ -34,10 +31,6 @@ import { CommentModelComponent } from './components/comment-model/comment-model.
     FeedItemComponent,
     GroupComponent,
     GroupsComponent,
-    HeaderComponent,
-    HeaderMenuComponent,
-    NavItemComponent,
-    NavListComponent,
     PostComponent,
     PostsComponent,
     SidebarComponent,
@@ -61,10 +54,6 @@ import { CommentModelComponent } from './components/comment-model/comment-model.
     FeedItemComponent,
     GroupComponent,
     GroupsComponent,
-    HeaderComponent,
-    HeaderMenuComponent,
-    NavItemComponent,
-    NavListComponent,
     PostComponent,
     PostsComponent,
     SidebarComponent,
