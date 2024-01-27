@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import CommentModelComponent from '@principal-components/comment-model/comment-model.component';
 import RegisterComponent from 'pages/account/register/register.component';
 
 export const routes: Routes = [
@@ -13,8 +14,14 @@ export const routes: Routes = [
     ],
   },
   {
-    path: 'main',
+    path: '',
     loadComponent: () => import('./pages/principal/home/home.component'),
+    children: [
+      {
+        path: 'post/:id',
+        component: CommentModelComponent,
+      }
+    ]
   },
   {
     path: 'profile',

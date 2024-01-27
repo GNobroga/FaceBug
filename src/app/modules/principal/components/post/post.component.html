@@ -3,8 +3,8 @@
     <div class="tw-flex tw-justify-between tw-flex-1">
     <div class="tw-flex tw-gap-3">
       <div class="perfil"></div>
-      <div class="tw-flex tw-flex-col">
-        <span>Gabriel Cardoso Girarde</span>
+      <div class="tw-flex tw-flex-col tw-text-white">
+        <a href="#" class="hover:tw-underline">Gabriel Cardoso Girarde</a>
         <span class="tw-opacity-70 tw-text-xs">1h</span>
       </div>
     </div>
@@ -14,7 +14,9 @@
     </div>
   </div>
   <div class="content">
-    <textarea [value]="'Oi, eu não sou o Goku!'"></textarea>
+    <p class="tw-text-white opacity-90">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo maxime enim in dolor quo porro debitis dolorum ex quas laboriosam dolore nostrum, neque quis provident suscipit molestiae eveniet temporibus dicta!
+    </p>
     <div class="photo"></div>
   </div>
   <div class="tw-flex tw-justify-between tw-text-white">
@@ -50,7 +52,7 @@
       <app-comment-reaction/>
     </li>
     <li
-      (click)="openCommentModal.set(true)"
+      routerLink="/post/1"
       class="tw-flex-1 tw-transition-all hover:tw-bg-light-100 tw-cursor-pointer tw-p-1 tw-rounded-md tw-flex tw-gap-2 tw-items-center tw-justify-center"
     >
       <img
@@ -64,8 +66,5 @@
   </ul>
 </div>
 
-@if (openCommentModal()) {
-  <app-comment-model (onClose)="openCommentModal.set(false)"/>
-}
 
 

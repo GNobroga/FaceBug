@@ -3,16 +3,15 @@
   top: 0;
   padding-top: 1rem;
   left: 0;
-  background-color: #3333332c;
+  background-color: rgba(0, 0, 0, 0.713);
   width: 100vw;
   height: 100vh;
-  z-index: 9999;
+  z-index: 99999;
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
 
   section {
-    max-width: 50vw;
+    max-width: 45vw;
     align-self: start;
     background-color: var(--second-color-10);
 

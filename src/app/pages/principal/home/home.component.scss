@@ -43,8 +43,7 @@
 
     app-content {
       max-width: 600px;
-      position: relative;
-      z-index: 500;
+      z-index: 999;
     }
 
     @media (max-width: 80rem) {

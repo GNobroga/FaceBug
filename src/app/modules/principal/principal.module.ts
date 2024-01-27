@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CommentBoxComponent } from '@principal-components/comment-box/comment-box.component';
+import CommentModelComponent from '@principal-components/comment-model/comment-model.component';
 import { CommentReactionComponent } from '@principal-components/comment-reaction/comment-reaction.component';
 import { ContactComponent } from '@principal-components/contact/contact.component';
 import { ContactsComponent } from '@principal-components/contacts/contacts.component';
@@ -15,8 +16,8 @@ import { PostsComponent } from '@principal-components/posts/posts.component';
 import SidebarItem from '@principal-components/sidebar-item/sidebar-item.component';
 import SidebarListComponent from '@principal-components/sidebar-list/sidebar-list.component';
 import { SidebarComponent } from '@principal-components/sidebar/sidebar.component';
-import { CommentModelComponent } from './components/comment-model/comment-model.component';
-import SharedModule from 'modules/shared/shared.module';
+import { InputTextareaModule } from 'primeng/inputtextarea';
+import PrincipalRoutingModule from './principal-routing.module';
 
 
 @NgModule({
@@ -37,10 +38,12 @@ import SharedModule from 'modules/shared/shared.module';
     SidebarItem,
     SidebarListComponent,
     CommentReactionComponent,
-    CommentModelComponent,
+    CommentModelComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    InputTextareaModule,
+    PrincipalRoutingModule
   ],
   exports: [
     CommentReactionComponent,
@@ -58,7 +61,8 @@ import SharedModule from 'modules/shared/shared.module';
     PostsComponent,
     SidebarComponent,
     SidebarItem,
-    SidebarListComponent
+    SidebarListComponent,
+    CommentModelComponent
   ]
 })
 export default class PrincipalModule {

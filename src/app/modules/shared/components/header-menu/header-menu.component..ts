@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-header-menu',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class HeaderMenuComponent {
 
+  menuItems: MenuItem[] = [
+    {
+      label: 'Configurações',
+      styleClass: 'tw-bg-transparent'
+    }
+  ]
 }

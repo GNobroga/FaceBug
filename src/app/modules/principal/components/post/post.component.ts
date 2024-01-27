@@ -8,7 +8,4 @@ import { Component, signal } from '@angular/core';
 export class PostComponent {
 
 
-  openCommentModal = signal(false);
-
-  
 }
