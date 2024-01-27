@@ -36,9 +36,9 @@
       <span>comentários</span>
     </div>
   </div>
-  <ul class="tw-flex tw-list-none tw-text-white tw-justify-center">
+  <ul class="tw-flex tw-list-none tw-text-white tw-justify-center tw-mt-3">
     <li
-      class="tw-flex-1 hover:tw-bg-light-100 tw-cursor-pointer tw-p-1 tw-rounded-md tw-flex tw-gap-2 tw-items-center tw-justify-center"
+      class="tw-transition-all tw-flex-1 like tw-relative hover:tw-bg-light-100 tw-cursor-pointer tw-p-1 tw-rounded-md tw-flex tw-gap-2 tw-items-center tw-justify-center"
     >
       <img
         src="assets/icons/comment/like-button.png"
@@ -47,9 +47,11 @@
         width="32"
       />
       Curtir
+      <app-comment-reaction/>
     </li>
     <li
-      class="tw-flex-1 hover:tw-bg-light-100 tw-cursor-pointer tw-p-1 tw-rounded-md tw-flex tw-gap-2 tw-items-center tw-justify-center"
+      (click)="openCommentModal.set(true)"
+      class="tw-flex-1 tw-transition-all hover:tw-bg-light-100 tw-cursor-pointer tw-p-1 tw-rounded-md tw-flex tw-gap-2 tw-items-center tw-justify-center"
     >
       <img
         src="assets/icons/comment/comments.png"
@@ -61,3 +63,9 @@
     </li>
   </ul>
 </div>
+
+@if (openCommentModal()) {
+  <app-comment-model (onClose)="openCommentModal.set(false)"/>
+}
+
+

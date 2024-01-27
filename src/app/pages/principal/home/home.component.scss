@@ -1,16 +1,17 @@
 :host {
+  position: relative;
 
   .contacts-and-groups {
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
-    max-width: 29vw;
+    max-width: 27vw;
     padding: 1rem;
     padding-top: 4.5rem;
     width: 100%;
     max-height: 100vh;
-    z-index: 10;
+    z-index: -10;
     background-color: var(--second-color-15);
     overflow-y: auto;
 
@@ -42,15 +43,14 @@
 
     app-content {
       max-width: 600px;
-      position: relative;
-      z-index: 100;
+
     }
 
     @media (max-width: 80rem) {
       grid-template-columns: 1fr;
 
       app-content {
-        max-width: 80%;
+        max-width: 60vw;
       }
     }
   }

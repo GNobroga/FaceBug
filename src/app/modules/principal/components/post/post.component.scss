@@ -44,6 +44,17 @@
         background-color: var(--white-color-100);
       }
     }
+  }
 
+  .like {
+    app-comment-reaction {
+      display: none;
+    }
+
+    &:hover {
+      app-comment-reaction {
+        display: block;
+      }
+    }
   }
 }

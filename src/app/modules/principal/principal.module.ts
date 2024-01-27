@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { CommentBoxComponent } from '@principal-components/comment-box/comment-box.component';
+import { CommentReactionComponent } from '@principal-components/comment-reaction/comment-reaction.component';
 import { ContactComponent } from '@principal-components/contact/contact.component';
 import { ContactsComponent } from '@principal-components/contacts/contacts.component';
 import { ContentComponent } from '@principal-components/content/content.component';
@@ -18,6 +19,7 @@ import { PostsComponent } from '@principal-components/posts/posts.component';
 import SidebarItem from '@principal-components/sidebar-item/sidebar-item.component';
 import SidebarListComponent from '@principal-components/sidebar-list/sidebar-list.component';
 import { SidebarComponent } from '@principal-components/sidebar/sidebar.component';
+import { CommentModelComponent } from './components/comment-model/comment-model.component';
 
 
 @NgModule({
@@ -40,12 +42,15 @@ import { SidebarComponent } from '@principal-components/sidebar/sidebar.componen
     PostsComponent,
     SidebarComponent,
     SidebarItem,
-    SidebarListComponent
+    SidebarListComponent,
+    CommentReactionComponent,
+    CommentModelComponent,
   ],
   imports: [
     CommonModule
   ],
   exports: [
+    CommentReactionComponent,
     CommentBoxComponent,
     ContactComponent,
     ContactsComponent,

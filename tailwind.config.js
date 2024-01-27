@@ -12,7 +12,7 @@ module.exports = {
         },
         black: {
           ...colors.black,
-          '100': '#3A3B3C'
+          '100': '#3A3B3C',
         },
         blue: {
           ...colors.blue,
@@ -24,7 +24,7 @@ module.exports = {
     container: {
       center: true,
       screens: {
-        md: '1000px'
+        md: '1000px',
       }
      }
   },

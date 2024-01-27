@@ -1,0 +1,61 @@
+:host {
+  position: fixed;
+  top: 0;
+  padding-top: 1rem;
+  left: 0;
+  background-color: #3333332c;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999999 !important;
+  display: flex;
+  justify-content: center;
+
+  section {
+    max-width: 50vw;
+    align-self: start;
+    background-color: var(--second-color-10);
+
+    header {
+      img {
+        width: 36px;
+      }
+    }
+
+
+    .perfil {
+      max-width: 40px;
+      width: 100%;
+      height: 40px;
+    }
+
+  }
+
+  .send {
+    width: 24px;
+    position: relative;
+    left: 0.2rem;
+  }
+
+  .scroll {
+    max-height: 60vh;
+    overflow: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+  .like {
+    position: relative;
+
+    app-comment-reaction {
+      display: none;
+      position: absolute;
+      top: -200%;
+    }
+
+    &:hover {
+      app-comment-reaction {
+        display: block;
+      }
+    }
+  }
+}

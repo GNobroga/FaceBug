@@ -1,0 +1,13 @@
+:host {
+  position: absolute;
+  top: -100%;
+  left: -0.8%;
+  width: 100%;
+
+  img {
+    max-width: 35px;
+    width: 100%;
+    position: relative;
+    top: 0.5rem;
+  }
+}
