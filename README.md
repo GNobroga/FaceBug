@@ -4,7 +4,7 @@ O objetivo desse projeto é clonar o layout do Facebook, criar um backend utiliz
 
 # Vídeo
 
-https://github.com/GNobroga/CloneFacebookAngular/assets/88632109/12326c94-08c1-42f1-9c70-23015190f5cf
+https://github.com/GNobroga/CloneFacebookAngular/assets/88632109/8b3354be-c3cd-40b2-a38d-eb743183fbdf
 
 ## Tecnologias
 
