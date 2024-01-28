@@ -1,3 +1,10 @@
+:host-context(.light) {
+  img {
+    filter: none !important;
+  }
+
+}
+
 :host {
   &::after {
     content: "";

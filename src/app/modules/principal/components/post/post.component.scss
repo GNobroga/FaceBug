@@ -1,3 +1,36 @@
+:host-context(.light) {
+  .post {
+    background-color: white !important;
+    border: 1px solid #33333330;
+
+    .perfil {
+      border: 1px solid rgba(0, 0, 0, 0.286);
+    }
+
+    span, a, p, li {
+      color: black !important;
+    }
+
+    .reactions {
+      li {
+        img {
+          filter: none !important;
+          opacity: 0.8 !important;
+        }
+      }
+    }
+
+    .photo {
+      background-color: var(--light-mode-100) !important;
+    }
+  }
+
+  hr {
+    display: block !important;
+  }
+}
+
+
 :host {
 
   .post {
@@ -6,6 +39,7 @@
     gap: 0.5rem;
     background-color: var(--second-color-10);
     padding: 1rem;
+    border-radius: 0.8rem;
 
     .header {
       display: flex;
@@ -56,5 +90,13 @@
         display: block;
       }
     }
+  }
+
+  hr {
+    position: relative;
+    top: 0.5rem;
+    position: block;
+    color: rgb(0, 0, 0);
+    display: none;
   }
 }

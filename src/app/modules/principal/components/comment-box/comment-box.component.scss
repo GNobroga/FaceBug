@@ -1,3 +1,29 @@
+:host-context(.light) {
+
+  .comment {
+    background-color: white;
+  }
+
+  .area-perfil-and-comment {
+    .perfil {
+      border: 1px solid rgba(0, 0, 0, 0.231);
+    }
+    input {
+      background-color: var(--light-mode-100) !important;
+      color: black !important;
+      &::placeholder {
+        color: inherit !important;
+      }
+    }
+  }
+
+  ul {
+    span {
+      color: black !important;
+    }
+  }
+}
+
 :host {
 
   .comment {
@@ -58,6 +84,7 @@
         span {
           color: var(--white-color-100);
           opacity: 0.6;
+          font-weight: bold;
         }
 
         img {

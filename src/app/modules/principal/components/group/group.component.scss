@@ -1,3 +1,16 @@
+:host-context(.light) {
+
+  .group {
+    border: 1px solid rgba(0, 0, 0, 0.335);
+    .group-intern {
+      border: inherit;
+    }
+  }
+  h1 {
+    color: black !important;
+  }
+}
+
 :host {
   .group {
     width: 30px;

@@ -8,10 +8,7 @@ import { MenuItem } from 'primeng/api';
 })
 export class HeaderMenuComponent {
 
-  menuItems: MenuItem[] = [
-    {
-      label: 'Configurações',
-      styleClass: 'tw-bg-transparent'
-    }
-  ]
+  toggleDisplayTheme() {
+    document.body.classList.toggle('light');
+  }
 }

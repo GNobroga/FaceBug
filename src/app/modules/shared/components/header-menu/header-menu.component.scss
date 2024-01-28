@@ -1,5 +1,25 @@
 $background-urls: "config.png", "help.png", "theme.png", "alert.png", "leave.png";
 
+:host-context(.light) {
+ ul {
+  background-color: white !important;
+  border: none;
+  span {
+    color: black !important;
+  }
+
+  li {
+    div {
+      background-color: var(--second-color-05) !important;
+    }
+  }
+  .icon {
+    filter: none;
+  }
+ }
+}
+
+
 :host(.open) {
   display: block;
 }
@@ -16,6 +36,8 @@ $background-urls: "config.png", "help.png", "theme.png", "alert.png", "leave.png
     padding: 1rem 1rem;
     box-shadow: 0 0 3px #3333337d;
     transition: all 0.5s ease-in;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.667);
 
     li {
       display: flex;
@@ -23,12 +45,19 @@ $background-urls: "config.png", "help.png", "theme.png", "alert.png", "leave.png
       align-items: center;
       padding: 0.5rem;
       cursor: pointer;
+      font-weight: bold;
+
+      div {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--second-color-05) !important;
+      }
 
       &:hover {
         background-color: var(--second-color-05);
       }
     }
-
   }
 
   .icon {
@@ -38,6 +67,8 @@ $background-urls: "config.png", "help.png", "theme.png", "alert.png", "leave.png
     display: inline-block;
     filter: invert(1);
     background-position: center;
+    position: relative;
+    left: 0.1rem;
   }
 
   @for $i from 1 through length($background-urls) {

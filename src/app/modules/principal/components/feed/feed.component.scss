@@ -1,3 +1,46 @@
+:host-context(.light) {
+
+  .area-feed {
+    background-color: var(--light-mode-100) !important;
+  }
+
+  .feed {
+    padding-bottom: 0.5rem;
+    background-color: inherit !important;
+  }
+
+  .create {
+    background-color: var(--light-mode-200) !important;
+    margin-bottom: 0.5rem;
+    div {
+      background-color: white !important;
+      color: black !important;
+      font-weight: bold;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+
+      button {
+        outline: 4px solid var(--light-mode-100) !important;
+      }
+    }
+  }
+
+  .arrow-right {
+    background-color: white !important;
+    @apply tw-shadow-sm;
+    color: black !important;
+    border: 0.5px solid rgba(0, 0, 0, 0.165);
+  }
+
+  .arrow-left {
+    background-color: white !important;
+    @apply tw-shadow-md;
+    color: black !important;
+    border: 0.5px solid rgba(0, 0, 0, 0.165);
+  }
+
+}
+
 :host {
   .area-feed {
     position: relative;
@@ -10,7 +53,15 @@
       background-color: var(--white-color-100);
       max-width: 150px;
       flex: 1;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.1s ease-in;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+
+      &:hover {
+        opacity: 0.6;
+      }
 
       div {
         position: absolute;

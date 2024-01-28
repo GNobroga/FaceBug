@@ -1,4 +1,13 @@
+:host-context(.light) {
+  .wrapper {
+    h1 {
+      color: black !important;
+      opacity: 0.7;
+    }
+  }
+}
+
 :host {
 
-  
+
 }

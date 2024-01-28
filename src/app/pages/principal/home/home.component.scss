@@ -1,3 +1,15 @@
+:host-context(.light) {
+  .wrapper {
+    background-color: var(--light-mode-100);
+    @apply tw-transition-all;
+  }
+
+  .contacts-and-groups {
+    background-color: var(--light-mode-100);
+    @apply tw-transition-all;
+  }
+}
+
 :host {
   position: relative;
 
@@ -60,6 +72,5 @@
     z-index: 1000;
     width: 100vw;
   }
-
 
 }

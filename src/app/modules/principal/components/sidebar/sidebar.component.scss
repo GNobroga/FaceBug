@@ -1,3 +1,47 @@
+:host-context(.light) {
+
+  aside {
+    background-color: var(--light-mode-100) !important;
+    color: black;
+    @apply tw-transition-all;
+
+    .user {
+      border: 1px solid #33333347 !important;
+    }
+
+    .second-section {
+
+      .edit {
+        &:hover {
+          background-color: transparent !important;
+        }
+
+        a {
+          color: blue;
+          &:hover {
+            background-color: var(--light-mode-200);
+          }
+        }
+      }
+
+      li:not(.edit) {
+        div {
+          border: 1px solid #33333347 !important;
+        }
+      }
+
+    }
+  }
+
+  .see-more {
+    a {
+      background-color: var(--light-mode-200) !important;
+      color: black !important;
+    }
+  }
+
+}
+
 :host {
   max-height: 100vh;
   overflow: hidden;
@@ -69,12 +113,25 @@
     .edit {
       display: flex;
       justify-content: space-between;
+      font-weight: normal !important;
+
+      span {
+        font-weight: bold;
+        opacity: 0.7;
+      }
+
+      &:hover {
+        a {
+          visibility: visible;
+        }
+      }
 
       a {
         text-decoration: none;
         color: var(--first-color-10);
         padding: 0.5rem;
         border-radius: 0.2rem;
+        visibility: hidden;
 
         &:hover {
           background-color: var(--second-color-00);
@@ -93,7 +150,7 @@
         display: flex;
         gap: 0.8rem;
         align-items: center;
-        font-weight: 500;
+        font-weight: bold;
         padding: 0.5rem;
 
         div {
