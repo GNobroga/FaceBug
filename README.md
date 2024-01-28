@@ -4,7 +4,9 @@ O objetivo desse projeto é fazer um layout parecido com o do facebook, criar um
 
 # Vídeo
 
-https://github.com/GNobroga/CloneFacebookAngular/assets/88632109/3bb0e3b8-f03c-4244-b458-8d3db6352a2b
+
+https://github.com/GNobroga/CloneFacebookAngular/assets/88632109/0e40a260-e4e2-4def-ae76-b9edd8ebccce
+
 
 ## Tecnologias
 
