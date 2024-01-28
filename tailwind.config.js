@@ -12,14 +12,19 @@ module.exports = {
         },
         black: {
           ...colors.black,
-          '100': '#3A3B3C',
+          '1000': '#3A3B3C',
         },
         blue: {
           ...colors.blue,
-          'facebook-100': '#415E9B',
-          'facebook-150': '#4267B2',
+          '1000': '#415E9B',
+          '1100': '#4267B2',
         }
       },
+      spacing: {
+        '250px': '250px',
+        '30vw': '30vw',
+        '45%': '45%'
+      }
     },
     container: {
       center: true,

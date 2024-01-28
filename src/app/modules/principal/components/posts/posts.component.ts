@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class PostsComponent {
 
+  countPosts = Array.from({ length: 10 }, () => null );
+
 }

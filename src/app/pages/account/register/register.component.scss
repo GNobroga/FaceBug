@@ -1,16 +1,15 @@
 :host {
 
   img {
-    max-width: 400px;
-    object-fit: cover;
+    max-width: 350px;
     width: 100%;
   }
 
   input, select {
-    height: 35px;
+    height: 38px;
     border: 1px solid var(--grey-color-100);
     outline: none;
   }
-  
+
 
 }

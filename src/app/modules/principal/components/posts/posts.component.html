@@ -1,6 +1,13 @@
+
+
 <div class="posts">
-  <app-post/>
-  <app-post/>
-  <app-post/>
-  <app-post/>
+
+  @for (_ of countPosts; track _) {
+    @defer (on viewport) {
+      <app-post/>
+    } @placeholder {
+      <p>Loading...</p>
+    }
+
+  }
 </div>
