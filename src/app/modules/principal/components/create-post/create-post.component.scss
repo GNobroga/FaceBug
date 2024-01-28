@@ -1,3 +1,65 @@
+:host-context(.light) {
+  background-color: var(--light-mode-300) !important;
+
+  .container {
+    @apply tw-shadow-xl;
+    border: none;
+    background-color: white !important;
+    header {
+      @apply tw-border-b;
+    }
+  }
+
+  .perfil {
+    border: 1px solid rgba(0, 0, 0, 0.347);
+    @apply tw-shadow-md;
+  }
+
+  h1, h2 {
+    color: black !important;
+  }
+
+  textarea {
+    color: black !important;
+    &::placeholder {
+      color: inherit !important;
+      opacity: 0.7 !important;
+    }
+  }
+  .photo-and-video {
+    border: 1px solid rgba(0, 0, 0, 0.311) !important;
+    h2 {
+      font-weight: bold;
+      opacity: 1 !important;
+    }
+  }
+
+  .close {
+    background-color: var(--light-mode-200) !important;
+    img {
+      filter: none !important;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  button {
+    opacity: 1 !important;
+    background-color: var(--first-color);
+    color: white !important;
+
+    &:hover {
+      opacity: 0.8 !important;
+    }
+  }
+
+  .icon {
+    filter: invert(1) !important;
+  }
+}
+
+
 :host {
   position: fixed;
   top: 0;
@@ -14,6 +76,8 @@
 
   .container {
    width: 40vw;
+   border-radius: 0.5rem;
+   border: 1px solid rgba(255, 255, 255, 0.500);
   }
 
   .close {
