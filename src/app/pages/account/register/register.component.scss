@@ -1,8 +1,24 @@
 :host {
 
-  img {
-    max-width: 350px;
-    width: 100%;
+  .header::before {
+    content: "";
+    height: 300px;
+    display: block;
+    background-color: #0866FF;
+  }
+
+  .wrapper {
+    top: -250px;
+    position: relative;
+
+    form {
+      border-radius: 10px;
+    }
+
+    button {
+      font-size: 1.1rem;
+      background-color: #42B72A;
+    }
   }
 
   input, select {
@@ -11,5 +27,9 @@
     outline: none;
   }
 
+  p-radioButton {
+    border: 1px solid var(--grey-color-100);
+    border-radius: 500px;
+  }
 
 }
