@@ -24,7 +24,7 @@ export const routes: Routes = [
     ]
   },
   {
-    path: 'profile',
+    path: 'perfil',
     loadComponent: () => import('./pages/profile/profile.component'),
   },
   {
