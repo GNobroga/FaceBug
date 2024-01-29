@@ -1,12 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 :host {
 
+  div>div {
+    background-color: #0866FF;
+
+    h1 {
+      font-family: "Poppins", sans-serif;
+    }
+
+    button {
+      width: 150px;
+      padding: .15rem;
+      border-radius: 5px;
+      border-color: #1666ce;
+      background-color: #1666ce;
+    }
+
+    .dark-theme {
+      height: 40px;
+      width: 40px;
+      border-radius: 500px;
+      background-color: #1666ce;
+
+      i {
+        background-image: url("/assets/icons/header/theme.png");
+        background-size: 22px 682px;
+        background-position: 0px -323.5px;
+        background-repeat: no-repeat;
+        width: 19px;
+        height: 23.5px;
+        display: inline-block;
+        filter: invert(1);
+      }
+
+      &:hover {
+        cursor: pointer;
+        filter: opacity(0.8);
+      }
+    }
+  }
+
   input {
-    max-width: 200px;
-    width: 100%;
+    border-radius: 5px;
+    padding: .2rem .8rem;
   }
 
   .wrapper {
     min-height: 100vh;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
 }
