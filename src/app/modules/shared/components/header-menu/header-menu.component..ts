@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { MenuItem } from 'primeng/api';
 
 @Component({
   selector: 'app-header-menu',
@@ -9,6 +8,7 @@ import { MenuItem } from 'primeng/api';
 export class HeaderMenuComponent {
 
   toggleDisplayTheme() {
+    document.documentElement.classList.toggle('light');
     document.body.classList.toggle('light');
   }
 }
