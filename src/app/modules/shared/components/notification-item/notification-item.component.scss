@@ -16,22 +16,24 @@
   }
 }
 
+
+
 :host {
 
   .item {
     position: relative;
 
-    &.seen {
+    &.disabled {
       opacity: 0.7;
     }
 
-    .seen {
+    .check-circle {
       position: absolute;
       right: 0;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
       background-color: var(--first-color);
       border-radius: 50%;
       cursor: pointer;

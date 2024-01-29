@@ -30,6 +30,7 @@ export const routes: Routes = [
   {
     path: 'notificacoes',
     loadComponent: () => import('./pages/notifications/notifications.component'),
+    title: 'Notificações',
   },
   {
     path: '',

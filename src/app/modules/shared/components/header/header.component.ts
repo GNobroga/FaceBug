@@ -1,5 +1,6 @@
-import { Component, ElementRef, EventEmitter, HostListener, Output, ViewChild, inject, signal } from '@angular/core';
+import { Component,  EventEmitter,  OnInit, Output,  inject, signal } from '@angular/core';
 import { INavMenu } from '../nav-list/nav-list.component';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -41,6 +42,9 @@ export class HeaderComponent {
 
   openNotificationMenu = signal(false);
 
+  #route = inject(ActivatedRoute);
+
+  isNotificationRoute = signal(this.#route.snapshot.title === 'Notificações');
 
   toggleAccountMenu() {
     if (this.openAccountMenu()) {
