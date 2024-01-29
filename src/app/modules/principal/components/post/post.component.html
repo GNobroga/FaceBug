@@ -1,4 +1,20 @@
-<div class="post tw-rounded-md'">
+@if (isLoading) {
+  <div class="post tw-rounded-md'">
+    <div class="header">
+      <div class="tw-flex tw-justify-between tw-flex-1">
+      <div class="tw-flex tw-gap-3">
+        <p-skeleton shape="circle" size="2.5rem"></p-skeleton>
+        <div class="tw-flex tw-flex-col tw-text-white">
+          <p-skeleton width="10rem" styleClass="tw-mb-2"></p-skeleton>
+          <p-skeleton width="2rem" styleClass="tw-mb-2"></p-skeleton>
+        </div>
+      </div>
+      </div>
+    </div>
+    <p-skeleton height="400px"></p-skeleton>
+  </div>
+} @else {
+  <div class="post tw-rounded-md'" [@fadeIn]>
   <div class="header">
     <div class="tw-flex tw-justify-between tw-flex-1">
     <div class="tw-flex tw-gap-3">
@@ -66,6 +82,4 @@
     </li>
   </ul>
 </div>
-
-
-
+}

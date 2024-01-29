@@ -15,6 +15,7 @@ import { PostsComponent } from '@principal-components/posts/posts.component';
 import { SidebarComponent } from '@principal-components/sidebar/sidebar.component';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { InputTextModule } from 'primeng/inputtext';
+import { SkeletonModule } from 'primeng/skeleton';
 import PrincipalRoutingModule from './principal-routing.module';
 import SidebarItem from '@principal-components/sidebar-item/sidebar-item.component';
 import SidebarListComponent from '@principal-components/sidebar-list/sidebar-list.component';
@@ -45,6 +46,8 @@ import CommentModelComponent from '@principal-components/comment-model/comment-m
     InputTextareaModule,
     PrincipalRoutingModule,
     InputTextModule,
+    SkeletonModule
+
   ],
   exports: [
     CommentReactionComponent,

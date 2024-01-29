@@ -20,7 +20,7 @@ import { NotificationMenuComponent } from './components/notification-menu/notifi
     HeaderMessageMenuComponent,
     HeaderMessageItemComponent,
     NotificationItemComponent,
-    NotificationMenuComponent
+    NotificationMenuComponent,
   ],
   imports: [
     MenubarModule,
