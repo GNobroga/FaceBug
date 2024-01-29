@@ -1,0 +1,13 @@
+:host-context(.light) {
+  .wrapper {
+    background-color: var(--light-mode-100);
+  }
+}
+
+:host {
+  .notifications {
+    padding-top: 4rem;
+    max-width: 600px;
+    margin: auto;
+  }
+}

@@ -13,9 +13,10 @@
         <button class="tw-bg-black-1100 tw-text-white tw-flex-1 tw-rounded-md  tw-text-sm tw-font-bold">Deletar</button>
       </div>
     </div>
+    <div class="seen"></div>
   </li>
 } @else {
-  <li class="item tw-flex tw-flex-wrap tw-gap-3 hover:tw-bg-light-100  tw-p-2 tw-rounded-md tw-cursor-pointer">
+  <li class="item {{ seen ? 'seen' : ''}} tw-flex tw-flex-wrap tw-gap-3 hover:tw-bg-light-100  tw-p-2 tw-rounded-md tw-cursor-pointer">
     <div class="perfil perfil-like">
       @if (isLike) {
         <img src="assets/icons/menu/like.svg" alt>
@@ -31,5 +32,6 @@
         </p>
       </div>
     </div>
+    <div class="seen {{ seen ? 'disabled' : ''}}" (click)="changeSeen()"></div>
   </li>
 }

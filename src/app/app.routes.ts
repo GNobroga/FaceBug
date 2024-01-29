@@ -28,6 +28,10 @@ export const routes: Routes = [
     loadComponent: () => import('./pages/profile/profile.component'),
   },
   {
+    path: 'notificacoes',
+    loadComponent: () => import('./pages/notifications/notifications.component'),
+  },
+  {
     path: '',
     pathMatch: 'full',
     redirectTo: 'login'

@@ -35,6 +35,16 @@
   }
 }
 
+:host(.expand) {
+  .wrapper {
+    max-height: none;
+
+    .see-more {
+      display: none;
+    }
+  }
+}
+
 
 :host {
   .wrapper {

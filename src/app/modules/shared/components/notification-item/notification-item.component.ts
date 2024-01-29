@@ -12,4 +12,11 @@ export class NotificationItemComponent {
   isLike = false;
   @Input()
   isLoved = false;
+
+  @Input()
+  seen = false;
+
+  changeSeen() {
+    this.seen = true;
+  }
 }
