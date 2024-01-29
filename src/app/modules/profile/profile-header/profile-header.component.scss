@@ -1,0 +1,16 @@
+:host {
+
+  header {
+    min-height: 400px;
+    background-color: var(--second-color-15);
+    position: relative;
+
+    .fileUpload {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding: 1rem;
+    }
+  }
+
+}
