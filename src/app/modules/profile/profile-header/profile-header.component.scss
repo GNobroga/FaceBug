@@ -1,7 +1,11 @@
 :host {
 
+  .profile-header {
+    position: relative;
+  }
+
   header {
-    min-height: 400px;
+    min-height: 300px;
     background-color: var(--second-color-15);
     position: relative;
 
@@ -10,6 +14,64 @@
       right: 0;
       bottom: 0;
       padding: 1rem;
+    }
+  }
+
+
+  .area-info {
+    display: flex;
+    padding: 0 3rem;
+    position: relative;
+
+
+    .perfil {
+      max-width: 180px;
+      width: 100%;
+      height: 180px;
+      background-image: url(/assets/icons/default-profile.png);
+      background-position: center;
+      position: relative;
+      bottom: 2rem;
+
+      div {
+        position: absolute;
+        right: 10%;
+        bottom: 5%;
+      }
+    }
+  }
+
+  ul {
+    li {
+      padding: 0.5rem;
+
+      &:hover {
+        background-color: var(--second-color-05);
+      }
+
+      &.active {
+        color: var(--first-color);
+        opacity: 1 !important;
+
+        &:hover {
+          background-color: transparent !important;
+        }
+
+        &::after {
+          background-color: currentColor;
+        }
+      }
+
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 7%;
+        height: 3px;
+        background-color: transparent;
+      }
     }
   }
 

@@ -1,5 +1,24 @@
-<header>
-  <div class="fileUpload">
-    <p-fileUpload mode="basic" chooseIcon="pi pi-camera" styleClass="tw-flex tw-p-1 tw-gap-2 tw-bg-black-1200" chooseLabel="Adicionar foto de plano" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" [maxFileSize]="1000000"></p-fileUpload>
+<div class="profile-header tw-pb-2">
+  <header>
+    <div class="fileUpload">
+      <p-fileUpload mode="basic" chooseIcon="pi pi-camera" styleClass="tw-flex tw-p-1 tw-gap-2 tw-bg-black-1200" chooseLabel="Adicionar foto de plano" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" [maxFileSize]="1000000"></p-fileUpload>
+    </div>
+  </header>
+  <div class="area-info tw-flex tw-gap-5">
+    <div class="perfil tw-bg-white tw-rounded-full">
+      <div>
+        <p-fileUpload mode="basic" chooseIcon="pi pi-camera" [style]="{ height: '40px', width: '40px'}" styleClass="tw-bg-black-1000  tw-rounded-full" name="demo[]" url="https://www.primefaces.org/cdn/api/upload.php" accept="image/*" [maxFileSize]="1000000"></p-fileUpload>
+      </div>
+    </div>
+    <div class="tw-flex tw-flex-col tw-gap-2 tw-self-center">
+      <h1 class="tw-text-4xl tw-text-white tw-font-bold">Gabriel Cardoso</h1>
+      <span class="tw-text-white tw-opacity-70">999 amigos</span>
+    </div>
   </div>
-</header>
+  <hr class="tw-opacity-20 tw-mb-1">
+  <ul class="tw-flex tw-gap-1 tw-text-white tw-max-w-xs">
+    <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-md active tw-opacity-80">Postagens</li>
+    <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-md tw-opacity-80">Amigos</li>
+    <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-md tw-opacity-80">Fotos</li>
+  </ul>
+</div>
