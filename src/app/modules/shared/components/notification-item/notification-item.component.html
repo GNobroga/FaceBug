@@ -1,0 +1,35 @@
+@if (!isLike && !isLoved) {
+  <li class="item tw-flex tw-gap-3 tw-py-2 hover:tw-bg-light-100 tw-rounded-md">
+    <div class="perfil tw-ml-1"></div>
+    <div class="request tw-flex tw-flex-col tw-gap-2">
+      <div class="tw-flex tw-gap-2">
+        <p class="tw-text-white tw-text-wrap">
+          <strong>Lívia</strong> enviou uma solicitação de amizade.
+          <span class="tw-text-blue-1200 tw-text-sm">Now</span>
+        </p>
+      </div>
+      <div class="actions tw-flex tw-gap-4">
+        <button class="tw-bg-blue-1300 tw-text-white tw-flex-1 tw-py-2 tw-rounded-md hover:tw-opacity-70 tw-text-sm tw-font-bold">Confirmar</button>
+        <button class="tw-bg-black-1100 tw-text-white tw-flex-1 tw-rounded-md  tw-text-sm tw-font-bold">Deletar</button>
+      </div>
+    </div>
+  </li>
+} @else {
+  <li class="item tw-flex tw-flex-wrap tw-gap-3 hover:tw-bg-light-100  tw-p-2 tw-rounded-md tw-cursor-pointer">
+    <div class="perfil perfil-like">
+      @if (isLike) {
+        <img src="assets/icons/menu/like.svg" alt>
+      } @else {
+        <img src="assets/icons/menu/love.png" alt>
+      }
+    </div>
+    <div class="request tw-flex tw-flex-col tw-gap-2">
+      <div class="tw-flex tw-gap-2">
+        <p class="tw-text-white tw-text-wrap">
+          <strong>Lívia</strong> {{ isLike ? 'Gostou da' : 'Amou' }} sua foto
+          <span class="tw-text-blue-1200 tw-text-sm">1h</span>
+        </p>
+      </div>
+    </div>
+  </li>
+}

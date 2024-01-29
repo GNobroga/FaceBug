@@ -1,0 +1,42 @@
+:host-context(.light) {
+  .wrapper {
+    background-color: white !important;
+
+    h1 {
+      color: black !important;
+    }
+
+    .search {
+      background-color: var(--light-mode-100) !important;
+      color: black;
+    }
+    .all-messager {
+      border-top: 1px solid rgba(0, 0, 0, 0.199) !important;
+    }
+ }
+}
+
+:host {
+ .wrapper {
+    background-color: var(--second-color-10);
+    border: 1px solid var(--grey-color-300);
+    border-radius: 1rem;
+    box-shadow: 0 0 3px #3333337d;
+    transition: all 0.5s ease-in;
+    max-height: 90vh;
+
+    .scroll {
+      padding: 1rem 1rem;
+    }
+
+    .search {
+      background-color: var(--second-color-00);
+      color: var(--white-color-100);
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .all-messager {
+      border-top: 1px solid rgba(255, 255, 255, 0.200);
+    }
+ }
+}

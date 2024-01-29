@@ -1,7 +1,18 @@
 :host-context(.light) {
+  &.active {
+    &::after {
+      background-color: var(--first-color);
+    }
+
+    img {
+      filter: invert(38%) sepia(100%) saturate(500%) contrast(100%) hue-rotate(180deg) !important;
+    }
+  }
   img {
     filter: none !important;
   }
+
+
 
 }
 
@@ -19,7 +30,7 @@
 
   &.active {
     &::after {
-      background-color: var(--first-color);
+      background-color: #5C95EE !important;
     }
 
     img {

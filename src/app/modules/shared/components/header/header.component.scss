@@ -201,11 +201,19 @@
     }
   }
 
-  app-header-menu {
+  app-header-menu, app-header-message-menu, app-notification-menu {
     position: absolute;
     right: 2%;
     max-width: 20vw;
     width: 100%;
+  }
+
+  app-header-message-menu {
+    max-width: 25vw;
+  }
+
+  app-notification-menu {
+    max-width: 25vw;
   }
 }
 

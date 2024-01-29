@@ -18,6 +18,12 @@ body {
 
   &.light {
     background-color: var(--light-mode-100);
+
+    ::-webkit-scrollbar-thumb {
+      background: #adababb2 !important;
+      border-radius: 10px;
+    }
+
   }
 }
 

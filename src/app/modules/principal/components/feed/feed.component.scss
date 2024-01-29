@@ -12,12 +12,13 @@
   .create {
     background-color: var(--light-mode-200) !important;
     margin-bottom: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.058) !important;
+
     div {
       background-color: white !important;
       color: black !important;
       font-weight: bold;
-      border-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
+      border-radius: 0.5rem;
 
       button {
         outline: 4px solid var(--light-mode-100) !important;
@@ -55,9 +56,9 @@
       flex: 1;
       border-radius: 1rem;
       cursor: pointer;
-      transition: all 0.1s ease-in;
-      border-bottom-right-radius: 1rem;
-      border-bottom-left-radius: 1rem;
+      overflow: hidden;
+      border-radius: 0.5rem;
+      border: 1px solid black;
 
       &:hover {
         opacity: 0.6;

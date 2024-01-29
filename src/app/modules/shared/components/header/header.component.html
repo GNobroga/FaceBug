@@ -12,23 +12,20 @@
   </div>
 
   <div class="third-section">
-    <ul>
+    <ul class="tw-justify-end">
       <li class="!tw-flex xl:!tw-hidden" (click)="toggleShowSidebar()">
         <img src="assets/icons/hamburguer.svg" alt>
       </li>
-      <li>
-        <img src="assets/icons/header/menu.svg" alt>
-      </li>
-      <li class="tw-relative">
+      <li class="tw-relative" (click)="toggleMessagerMenu()">
         <img src="assets/icons/header/messager.svg" alt>
         <span style="height: 18px; width: 16px; top: -0.4rem; right: 0" class="tw-absolute tw-rounded-full tw-flex tw-items-center tw-justify-center tw-bg-red-500 ">
           1
         </span>
       </li>
-      <li>
+      <li (click)="toggleNotificationMenu()">
         <img src="assets/icons/header/notifications.svg" alt>
       </li>
-      <li class="account" (click)="toggleMenu()">
+      <li class="account" (click)="toggleAccountMenu()">
           <a>
             <img src="assets/icons/header/arrow-down.svg" alt>
           </a>
@@ -37,4 +34,16 @@
   </div>
 </header>
 
-<app-header-menu class="{{ openMenu() ? 'open' : '' }}"/>
+@if (openAccountMenu()) {
+  <app-header-menu #accountMenu/>
+}
+
+@if (openMessagerMenu()) {
+  <app-header-message-menu #messagerMenu/>
+}
+
+@if (openNotificationMenu()) {
+  <app-notification-menu/>
+}
+
+

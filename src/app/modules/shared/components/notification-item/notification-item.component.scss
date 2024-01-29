@@ -1,0 +1,50 @@
+:host-context(.light) {
+  .item {
+    .perfil {
+      border: 1px solid rgba(0, 0, 0, 0.235);
+      @apply tw-shadow-md;
+    }
+
+    p {
+      color: black !important;
+    }
+
+    button:hover {
+      opacity: 0.8 !important;
+    }
+
+  }
+}
+
+:host {
+
+  .item {
+    .perfil {
+      min-width: 50px;
+      min-height: 50px;
+      width: 50px;
+      height: 50px;
+      background-color: var(--white-color-100);
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    button {
+      max-width: 100px;
+    }
+
+    .perfil-like {
+      position: relative;
+      width: 45px;
+      height: 45px;
+
+
+      img {
+        width: 30px;
+        position: absolute;
+        bottom: 0;
+        right: -2%;
+      }
+    }
+  }
+}

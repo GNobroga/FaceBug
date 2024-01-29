@@ -1,0 +1,32 @@
+<div class="wrapper tw-p-3 tw-overflow-y-auto tw-flex tw-flex-col tw-gap-3">
+  <header class="tw-flex tw-flex-col tw-gap-3 tw-text-white">
+    <div class="tw-flex tw-justify-between tw-px-2">
+      <h1 class="tw-font-bold tw-text-2xl">Notificações</h1>
+      <a href="#" class="tw-text-blue-1200 hover:tw-underline">Veja mais</a>
+    </div>
+
+    <ul class="tw-flex tw-gap-3">
+      <li class="tw-rounded-full tw-text-sm active tw-transition-all">Todos</li>
+      <li class="tw-rounded-full tw-text-sm tw-transition-all">Não lido</li>
+    </ul>
+  </header>
+ <div class=" tw-flex tw-flex-col tw-gap-3">
+    <h2 class="tw-text-white tw-font-bold tw-text-md tw-px-3">Solicitações</h2>
+    <ul class="tw-flex  tw-flex-col tw-gap-3  tw-p-2">
+      <app-notification-item/>
+      <app-notification-item/>
+      <app-notification-item/>
+    </ul>
+ </div>
+ <div class=" tw-flex tw-flex-col tw-gap-3">
+  <h2 class="tw-text-white tw-font-bold tw-text-md tw-px-3">Mais cedo</h2>
+  <ul class="tw-flex  tw-flex-col tw-gap-2 tw-p-2">
+    <app-notification-item [isLike]="true"/>
+    <app-notification-item [isLike]="true"/>
+    <app-notification-item [isLike]="true"/>
+    <app-notification-item [isLoved]="true"/>
+    <app-notification-item [isLoved]="true"/>
+    <app-notification-item [isLoved]="true"/>
+  </ul>
+</div>
+</div>

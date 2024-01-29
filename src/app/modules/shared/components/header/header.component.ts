@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, signal } from '@angular/core';
+import { Component, ElementRef, EventEmitter, HostListener, Output, ViewChild, inject, signal } from '@angular/core';
 import { INavMenu } from '../nav-list/nav-list.component';
 
 @Component({
@@ -31,17 +31,52 @@ export class HeaderComponent {
     }
   ];
 
-  openMenu = signal(false);
 
   @Output()
   onShowSidebar = new EventEmitter();
 
-  toggleMenu() {
-    this.openMenu.set(!this.openMenu());
+  openAccountMenu = signal(false);
+
+  openMessagerMenu = signal(false);
+
+  openNotificationMenu = signal(false);
+
+
+  toggleAccountMenu() {
+    if (this.openAccountMenu()) {
+      this.clearMenus();
+    } else {
+      this.clearMenus();
+      this.openAccountMenu.set(true);
+    }
+  }
+
+  toggleMessagerMenu() {
+    if (this.openMessagerMenu()) {
+      this.clearMenus();
+    } else {
+      this.clearMenus();
+      this.openMessagerMenu.set(true);
+    }
+  }
+
+  toggleNotificationMenu() {
+    if (this.openNotificationMenu()) {
+      this.clearMenus();
+    } else {
+      this.clearMenus();
+      this.openNotificationMenu.set(true);
+    }
   }
 
   toggleShowSidebar() {
     this.onShowSidebar.emit();
+  }
+
+  clearMenus() {
+    this.openAccountMenu.set(false);
+    this.openMessagerMenu.set(false);
+    this.openNotificationMenu.set(false);
   }
 
 
