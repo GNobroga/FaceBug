@@ -1,5 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, inject, signal } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ChangeDetectionStrategy, Component, Input, } from '@angular/core';
 
 @Component({
   selector: 'app-notification-item',
@@ -16,11 +15,6 @@ export class NotificationItemComponent {
 
   @Input()
   isChecked = false;
-
-  #route = inject(ActivatedRoute);
-
-  isNotificationRoute = signal(this.#route.snapshot.title === 'Notificações');
-
 
   changeChecked() {
     this.isChecked = true;
