@@ -172,6 +172,13 @@
           justify-content: center;
           align-items: center;
 
+          &.disabled {
+            background-color: #233950;
+            img {
+              filter: invert(38%) sepia(100%) saturate(500%) contrast(100%) hue-rotate(180deg) !important;
+            }
+          }
+
 
           &:hover {
             background-color: var(--second-color-05);

@@ -25,13 +25,15 @@ import { NotificationMenuComponent } from './components/notification-menu/notifi
   imports: [
     MenubarModule,
     InputTextModule,
-    AutoFocusModule
+    AutoFocusModule,
   ],
   exports: [
     HeaderComponent,
     HeaderMenuComponent,
     NavItemComponent,
-    NavListComponent
+    NavListComponent,
+    NotificationItemComponent,
+    NotificationMenuComponent,
   ]
 })
 export default class SharedModule {

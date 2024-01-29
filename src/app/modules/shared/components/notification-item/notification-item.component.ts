@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, } from '@angular/core';
 
 @Component({
   selector: 'app-notification-item',
@@ -12,4 +12,11 @@ export class NotificationItemComponent {
   isLike = false;
   @Input()
   isLoved = false;
+
+  @Input()
+  isChecked = false;
+
+  changeChecked() {
+    this.isChecked = true;
+  }
 }

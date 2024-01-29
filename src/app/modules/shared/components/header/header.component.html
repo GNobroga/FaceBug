@@ -1,7 +1,7 @@
 
 <header>
   <div class="first-section">
-    <div class="logo">FB</div>
+    <div class="logo" routerLink="/">FB</div>
     <div class="search">
       <img src="assets/icons/header/search.svg" alt>
       <input type="text" name="search" placeholder="Pesquisar Facebook">
@@ -22,7 +22,7 @@
           1
         </span>
       </li>
-      <li (click)="toggleNotificationMenu()">
+      <li (click)="isNotificationRoute() ? null : toggleNotificationMenu()" [class.disabled]="isNotificationRoute()">
         <img src="assets/icons/header/notifications.svg" alt>
       </li>
       <li class="account" (click)="toggleAccountMenu()">

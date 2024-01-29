@@ -16,9 +16,31 @@
   }
 }
 
+
+
 :host {
 
   .item {
+    position: relative;
+
+    &.disabled {
+      opacity: 0.7;
+    }
+
+    .check-circle {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 15px;
+      height: 15px;
+      background-color: var(--first-color);
+      border-radius: 50%;
+      cursor: pointer;
+      &.disabled {
+        display: none;
+      }
+    }
     .perfil {
       min-width: 50px;
       min-height: 50px;
