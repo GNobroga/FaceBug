@@ -1,1 +1,23 @@
-<p>photo-gallery works!</p>
+<main class="main tw-max-w-1000px tw-mx-auto tw-w-full tw-rounded-md tw-flex tw-flex-col tw-gap-5">
+    <header class="tw-flex tw-justify-between tw-text-white">
+      <h1 class="tw-text-xl tw-font-bold">Fotos</h1>
+    </header>
+    <ul class="your-photos">
+      <li class="tw-text-white active">
+        <span>Suas fotos</span>
+      </li>
+    </ul>
+    <ul class="tw-grid tw-grid-cols-6 tw-gap-3">
+      <app-photo-gallery-item/>
+      <app-photo-gallery-item/>
+      <app-photo-gallery-item/>
+      <app-photo-gallery-item/>
+      <app-photo-gallery-item/>
+      <app-photo-gallery-item/>
+      <app-photo-gallery-item/>
+    </ul>
+</main>
+
+<div class="tw-mt-5">
+  <app-video-gallery title="Seus vídeos favoritos"/>
+</div>

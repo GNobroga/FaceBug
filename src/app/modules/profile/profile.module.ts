@@ -17,6 +17,7 @@ import { RouterModule } from '@angular/router';
 import { MenuModule } from 'primeng/menu';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { PhotoGalleryItemComponent } from './photo-gallery-item/photo-gallery-item.component';
+import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { PhotoGalleryItemComponent } from './photo-gallery-item/photo-gallery-it
     SearchFriendsComponent,
     FriendItemComponent,
     PhotoGalleryComponent,
-    PhotoGalleryItemComponent
+    PhotoGalleryItemComponent,
+    VideoGalleryComponent
   ],
   imports: [
     CommonModule,

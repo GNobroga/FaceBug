@@ -68,9 +68,10 @@
         display: block;
         position: absolute;
         bottom: 0;
-        width: 5.5vw;
+        width: 5vw;
         height: 3px;
         background-color: transparent;
+        transform: translateX(-2%);
       }
     }
   }

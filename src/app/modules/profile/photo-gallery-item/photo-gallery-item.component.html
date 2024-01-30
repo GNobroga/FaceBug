@@ -1,1 +1,8 @@
-<p>photo-gallery-item works!</p>
+<li class="tw-cursor-pointer" [@fadeIn]>
+  <p-skeleton height="30vh" />
+  <button (click)="menu.toggle($event)">
+    <i class="pi pi-pencil"></i>
+  </button>
+</li>
+
+<p-menu [popup]="true" #menu [model]="menuItems"/>

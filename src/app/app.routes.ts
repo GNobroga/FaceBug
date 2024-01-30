@@ -1,7 +1,9 @@
 import { Routes } from '@angular/router';
 import CommentModelComponent from '@principal-components/comment-model/comment-model.component';
 import { PerfilComponent } from 'modules/profile/perfil/perfil.component';
+import { PhotoGalleryComponent } from 'modules/profile/photo-gallery/photo-gallery.component';
 import { SearchFriendsComponent } from 'modules/profile/search-friends/search-friends.component';
+import { VideoGalleryComponent } from 'modules/profile/video-gallery/video-gallery.component';
 import RegisterComponent from 'pages/account/register/register.component';
 
 export const routes: Routes = [
@@ -48,6 +50,14 @@ export const routes: Routes = [
       {
         path: 'amigos',
         component: SearchFriendsComponent,
+      },
+      {
+        path: 'fotos',
+        component: PhotoGalleryComponent,
+      },
+      {
+        path: 'videos',
+        component: VideoGalleryComponent,
       }
     ]
   },
