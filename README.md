@@ -6,7 +6,7 @@ O objetivo desse projeto é fazer um layout parecido com o do facebook, criar um
 
 
 
-https://github.com/GNobroga/FaceBug/assets/88632109/3891b0f5-05f0-47de-b634-a63017a911ae
+https://github.com/GNobroga/FaceBug/assets/88632109/20195ba4-5514-4caa-a9f9-c9ac77215abb
 
 
 
