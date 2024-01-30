@@ -1,11 +1,11 @@
 import { Component, Input, OnInit, signal } from '@angular/core';
-import fadeInAnimation from 'animations/fadeInAnimation';
+import { fadeInOutAnimation } from 'animations/fastFadeInOutAnimation';
 
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
   styleUrl: './post.component.scss',
-  animations: [fadeInAnimation]
+  animations: [fadeInOutAnimation]
 })
 export class PostComponent implements OnInit {
 

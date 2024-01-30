@@ -1,10 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { fadeInOutAnimation } from 'animations/fastFadeInOutAnimation';
 
 @Component({
   selector: 'app-photo',
   templateUrl: './photo.component.html',
   styleUrl: './photo.component.scss',
-  changeDetection: ChangeDetectionStrategy.OnPush
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  animations: [fadeInOutAnimation]
 })
 export class PhotoComponent {
 

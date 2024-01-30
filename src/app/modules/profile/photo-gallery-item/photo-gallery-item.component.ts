@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import fadeInAnimation from 'animations/fadeInAnimation';
+import { fadeInOutAnimation } from 'animations/fastFadeInOutAnimation';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -7,7 +7,7 @@ import { MenuItem } from 'primeng/api';
   templateUrl: './photo-gallery-item.component.html',
   styleUrl: './photo-gallery-item.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [fadeInAnimation],
+  animations: [fadeInOutAnimation],
 })
 export class PhotoGalleryItemComponent {
 
