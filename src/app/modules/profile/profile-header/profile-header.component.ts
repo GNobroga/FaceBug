@@ -8,4 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class ProfileHeaderComponent {
 
+  handleFileUpload(event: any) {
+    console.log(event);
+  }
 }

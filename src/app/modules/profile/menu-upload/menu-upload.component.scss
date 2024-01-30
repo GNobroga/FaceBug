@@ -1,0 +1,50 @@
+:host {
+  .upload {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 100vh;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    main {
+      background-color: var(--second-color-10);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding-bottom: 1rem;
+
+      header {
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        button {
+          background-color: var(--second-color-05);
+          border-radius: 50%;
+
+          &:hover {
+            opacity: 0.7;
+          }
+          img {
+            width: 40px;
+            height: 40px;
+            filter: invert(1);
+          }
+        }
+      }
+
+      .actions {
+        li {
+          button.active {
+            background-color: #394D62;
+            color: var(--blue-color-100);
+          }
+
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+}

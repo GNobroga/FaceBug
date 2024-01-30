@@ -18,6 +18,10 @@ import { MenuModule } from 'primeng/menu';
 import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
 import { PhotoGalleryItemComponent } from './photo-gallery-item/photo-gallery-item.component';
 import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
+import { ImageCropperModule } from 'ngx-image-cropper';
+import { MenuUploadComponent } from './menu-upload/menu-upload.component';
+import { PhotoSuggestComponent } from './photo-suggest/photo-suggest.component';
+import { PhotoSuggestItemComponent } from './photo-suggest/photo-suggest-item/photo-suggest-item.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,10 @@ import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
     FriendItemComponent,
     PhotoGalleryComponent,
     PhotoGalleryItemComponent,
-    VideoGalleryComponent
+    VideoGalleryComponent,
+    MenuUploadComponent,
+    PhotoSuggestComponent,
+    PhotoSuggestItemComponent,
   ],
   imports: [
     CommonModule,
@@ -41,7 +48,8 @@ import { VideoGalleryComponent } from './video-gallery/video-gallery.component';
     FormsModule,
     InputTextModule,
     RouterModule,
-    MenuModule
+    MenuModule,
+    ImageCropperModule
   ],
   exports: [
     ProfileHeaderComponent,
