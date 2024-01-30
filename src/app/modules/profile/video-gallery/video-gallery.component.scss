@@ -1,3 +1,13 @@
+:host-context(.light) {
+  main {
+    background-color: white;
+
+    h1 {
+      color: black;
+    }
+  }
+}
+
 :host {
   main {
     background-color: var(--second-color-10);

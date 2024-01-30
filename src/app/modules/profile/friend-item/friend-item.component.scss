@@ -1,3 +1,27 @@
+:host-context(.light) {
+  h1, span {
+    color: black;
+  }
+
+  li {
+    border: 1px solid rgba(0, 0, 0, 0.051);
+  }
+
+  .three-dot {
+    filter: invert(1) opacity(.5);
+  }
+
+  ::ng-deep {
+    .p-menu-list {
+      background-color: white;
+    }
+
+    span {
+      color: black !important;
+    }
+  }
+}
+
 :host {
   li {
     border: 1px solid rgba(255, 255, 255, 0.051);
@@ -10,8 +34,6 @@
       filter: invert(1);
     }
   }
-
-
 }
 
 

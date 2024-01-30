@@ -1,3 +1,31 @@
+:host-context(.light) {
+  h1, span, li {
+    color: black;
+  }
+
+  header {
+    background-color: var(--light-mode-100);
+
+    ::ng-deep {
+      .tw-bg-black-1200 {
+        color: black !important;
+        background-color: white !important;
+      }
+    }
+  }
+
+  .perfil {
+    div {
+      background-color: var(--light-mode-100);
+
+      i {
+        filter: invert(1) opacity(.7);
+      }
+    }
+  }
+}
+
+
 :host {
 
   .profile-header {
