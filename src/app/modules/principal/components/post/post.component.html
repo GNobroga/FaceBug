@@ -1,4 +1,4 @@
-@if (isLoading) {
+@if (isLoading()) {
   <div class="post tw-rounded-md'">
     <div class="header">
       <div class="tw-flex tw-justify-between tw-flex-1">
@@ -69,7 +69,7 @@
       <app-comment-reaction/>
     </li>
     <li
-      routerLink="/post/1"
+      [routerLink]="link"
       class="tw-flex-1 tw-transition-all hover:tw-bg-light-100 tw-cursor-pointer tw-p-1 tw-rounded-md tw-flex tw-gap-2 tw-items-center tw-justify-center"
     >
       <img

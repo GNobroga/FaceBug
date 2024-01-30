@@ -7,6 +7,13 @@ import { FriendsComponent } from './friends/friends.component';
 import { FriendComponent } from './friend/friend.component';
 import { SkeletonModule } from 'primeng/skeleton';
 import { PhotoComponent } from './photo/photo.component';
+import { PerfilComponent } from './perfil/perfil.component';
+import PrincipalModule from 'modules/principal/principal.module';
+import { SearchFriendsComponent } from './search-friends/search-friends.component';
+import { FormsModule } from '@angular/forms';
+import { InputTextModule } from 'primeng/inputtext';
+import { FriendItemComponent } from './friend-item/friend-item.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -14,12 +21,19 @@ import { PhotoComponent } from './photo/photo.component';
     GalleryComponent,
     FriendsComponent,
     FriendComponent,
-    PhotoComponent
+    PhotoComponent,
+    PerfilComponent,
+    SearchFriendsComponent,
+    FriendItemComponent
   ],
   imports: [
     CommonModule,
     FileUploadModule,
-    SkeletonModule
+    SkeletonModule,
+    PrincipalModule,
+    FormsModule,
+    InputTextModule,
+    RouterModule
   ],
   exports: [
     ProfileHeaderComponent,

@@ -1,0 +1,44 @@
+:host {
+
+  main {
+    background-color: var(--second-color-10);
+    padding: 1.5rem;
+  }
+
+  .search {
+    padding-left: 0.4rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--second-color-00);
+    border-radius: 1rem;
+    color: #fff;
+
+    img {
+      margin-left: 0.5rem;
+      opacity: 0.8;
+      filter: invert(1);
+      opacity: 0.5;
+    }
+
+    input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      padding-left: 0.1rem;
+      color: currentColor;
+      flex: 1;
+      height: inherit;
+
+      &::placeholder {
+        color: rgb(255, 255, 255);
+        opacity: 0.7;
+        font-size: 0.9rem;
+        position: relative;
+        bottom: 0.1rem;
+      }
+    }
+  }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-posts',
@@ -9,4 +9,6 @@ export class PostsComponent {
 
   countPosts = Array.from({ length: 10 }, () => null );
 
+  @Input({ required: true })
+  link!: string;
 }

@@ -17,8 +17,8 @@
   </div>
   <hr class="tw-opacity-20 tw-mb-1">
   <ul class="tw-flex tw-gap-1 tw-text-white tw-max-w-xs">
-    <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-sm active tw-opacity-80">Postagens</li>
-    <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-sm tw-opacity-80">Amigos</li>
+    <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-sm tw-opacity-80" routerLink="/perfil" [routerLinkActiveOptions]="{ exact: true }"  routerLinkActive="active">Postagens</li>
+    <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-sm tw-opacity-80" routerLink="/perfil/amigos" routerLinkActive="active">Amigos</li>
     <li class="tw-cursor-pointer tw-flex-1 tw-text-center tw-rounded-sm tw-opacity-80">Fotos</li>
   </ul>
 </div>

@@ -9,18 +9,4 @@
     background-color: var(--second-color-10);
   }
 
-  .main {
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    background-color: var(--second-color-15);
-    gap: 1rem;
-
-
-
-    .area-2, .area-1 {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-  }
 }

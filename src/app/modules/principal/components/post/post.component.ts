@@ -1,4 +1,4 @@
-import { Component, OnInit, signal } from '@angular/core';
+import { Component, Input, OnInit, signal } from '@angular/core';
 import fadeInAnimation from 'animations/fadeInAnimation';
 
 @Component({
@@ -9,10 +9,13 @@ import fadeInAnimation from 'animations/fadeInAnimation';
 })
 export class PostComponent implements OnInit {
 
-  isLoading = true;
+  isLoading = signal(true);
+
+  @Input({ required: true })
+  link!: string;
 
   ngOnInit() {
-    setTimeout(() => this.isLoading = false, 1000);
+    setTimeout(() => this.isLoading.set(false), 500);
   }
 
 }

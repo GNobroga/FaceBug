@@ -4,7 +4,8 @@
 
   @for (_ of countPosts; track _) {
     @defer (on viewport) {
-      <app-post/>
+      <!--TODO Link pra testar rota -->
+      <app-post [link]="link"/>
     } @placeholder {
       <p>Loading...</p>
     }

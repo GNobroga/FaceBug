@@ -1,0 +1,14 @@
+:host {
+  li {
+    border: 1px solid rgba(255, 255, 255, 0.051);
+  }
+
+  .three-dot {
+    cursor: pointer;
+    img {
+      width: 24px;
+      filter: invert(1);
+    }
+  }
+
+}
