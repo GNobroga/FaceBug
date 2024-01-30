@@ -7,7 +7,7 @@
     border: none;
 
     header {
-      @apply tw-shadow-md;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
       h1 {
         color: black !important;
@@ -65,7 +65,7 @@
   top: 0;
   padding-top: 5rem;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.713);
+  background-color: rgba(0, 0, 0, 0.500);
   width: 100vw;
   height: 100vh;
   z-index: 99999;
@@ -73,7 +73,7 @@
   justify-content: center;
 
   .wrapper {
-    border: 1px solid rgba(255, 255, 255, 0.500);
+    border: 1px solid rgba(255, 255, 255, 0.200);
   }
 
   section {
@@ -83,7 +83,7 @@
 
 
     header {
-      @apply tw-shadow-sm tw-shadow-white;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.200);
       img {
         width: 36px;
       }
