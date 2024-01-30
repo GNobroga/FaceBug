@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { fadeInOutAnimation } from 'animations/fastFadeInOutAnimation';
+import { fadeInOutAnimation } from 'animations';
 import { MenuItem } from 'primeng/api';
 
 @Component({
