@@ -10,6 +10,9 @@ import { InputTextModule } from 'primeng/inputtext';
 import { AutoFocusModule } from 'primeng/autofocus';
 import { NotificationItemComponent } from './components/notification-item/notification-item.component';
 import { NotificationMenuComponent } from './components/notification-menu/notification-menu.component';
+import { ShowLikeModalComponent } from './components/show-like-modal/show-like-modal.component';
+import { TabViewModule } from 'primeng/tabview';
+import { ShowLikeModalItemComponent } from './components/show-like-modal/show-like-modal-item/show-like-modal-item.component';
 
 @NgModule({
   declarations: [
@@ -21,11 +24,14 @@ import { NotificationMenuComponent } from './components/notification-menu/notifi
     HeaderMessageItemComponent,
     NotificationItemComponent,
     NotificationMenuComponent,
+    ShowLikeModalComponent,
+    ShowLikeModalItemComponent,
   ],
   imports: [
     MenubarModule,
     InputTextModule,
     AutoFocusModule,
+    TabViewModule,
   ],
   exports: [
     HeaderComponent,
@@ -34,6 +40,7 @@ import { NotificationMenuComponent } from './components/notification-menu/notifi
     NavListComponent,
     NotificationItemComponent,
     NotificationMenuComponent,
+    ShowLikeModalComponent,
   ]
 })
 export default class SharedModule {

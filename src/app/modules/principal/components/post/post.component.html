@@ -45,7 +45,7 @@
           <img src="assets/icons/comment/love.svg" alt="" width="16" />
         </li>
       </ul>
-      <span class="hover:tw-underline tw-cursor-pointer tw-opacity-70"
+      <span class="hover:tw-underline tw-cursor-pointer tw-opacity-70" (click)="openLikeMenu.set(true)"
         >1000</span
       >
     </div>
@@ -83,3 +83,9 @@
   </ul>
 </div>
 }
+
+@if (openLikeMenu()) {
+  <app-show-like-modal/>
+}
+
+

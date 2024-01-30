@@ -1,0 +1,31 @@
+<div class="tw-max-w-550px wrapper tw-w-full tw-p-2 tw-pb-5 tw-px-4 tw-rounded-md tw-flex tw-flex-col tw-gap-5">
+  <div class="tw-flex tw-justify-between tw-items-center">
+   <ul class="tw-flex tw-gap-1">
+    <li class="tw-cursor-pointer active tw-font-bold tw-text-blue-1300 hover:tw-bg-light-100 tw-p-1 tw-rounded-md">
+      <span>Todos</span>
+    </li>
+    <li class="tw-cursor-pointer hover:tw-bg-light-100 tw-p-1 tw-rounded-md">
+      <div class="tw-flex tw-gap-2">
+        <img src="assets/icons/menu/like.svg" alt>
+        <span class="tw-text-white tw-opacity-70">2</span>
+      </div>
+    </li>
+    <li class="tw-cursor-pointer hover:tw-bg-light-100 tw-p-1 tw-rounded-md">
+      <div class="tw-flex tw-gap-2">
+        <img src="assets/icons/menu/love.png" alt>
+        <span class="tw-text-white tw-opacity-70">100</span>
+      </div>
+    </li>
+   </ul>
+   <button (click)="close()">
+      <img src="assets/icons/close.png">
+   </button>
+  </div>
+  <ul class="tw-flex tw-flex-col tw-gap-5">
+    <app-show-like-modal-item/>
+    <app-show-like-modal-item/>
+    <app-show-like-modal-item/>
+    <app-show-like-modal-item/>
+    <app-show-like-modal-item/>
+  </ul>
+</div>

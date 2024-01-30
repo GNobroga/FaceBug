@@ -20,6 +20,7 @@ import PrincipalRoutingModule from './principal-routing.module';
 import SidebarItem from '@principal-components/sidebar-item/sidebar-item.component';
 import SidebarListComponent from '@principal-components/sidebar-list/sidebar-list.component';
 import CommentModelComponent from '@principal-components/comment-model/comment-model.component';
+import SharedModule from 'modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -46,8 +47,8 @@ import CommentModelComponent from '@principal-components/comment-model/comment-m
     InputTextareaModule,
     PrincipalRoutingModule,
     InputTextModule,
-    SkeletonModule
-
+    SkeletonModule,
+    SharedModule
   ],
   exports: [
     CommentReactionComponent,

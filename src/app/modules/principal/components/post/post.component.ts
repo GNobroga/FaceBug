@@ -14,6 +14,8 @@ export class PostComponent implements OnInit {
   @Input({ required: true })
   link!: string;
 
+  openLikeMenu = signal(false);
+
   ngOnInit() {
     setTimeout(() => this.isLoading.set(false), 500);
   }

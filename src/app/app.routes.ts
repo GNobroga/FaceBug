@@ -49,7 +49,7 @@ export const routes: Routes = [
           {
             path: 'upload',
             component: MenuUploadComponent,
-          }
+          },
         ]
       },
       {
