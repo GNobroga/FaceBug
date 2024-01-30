@@ -1,3 +1,30 @@
+:host-context(.light) {
+  main {
+    background-color: white;
+
+    h1 {
+      color: black;
+    }
+
+    .search {
+      background-color: var(--light-mode-100) !important;
+
+      img {
+        filter: invert(0) !important;
+        opacity: 0.5 !important;
+      }
+
+      input {
+        color: black !important;
+
+        &::placeholder {
+          color: inherit !important;
+        }
+      }
+    }
+  }
+}
+
 :host {
 
   main {

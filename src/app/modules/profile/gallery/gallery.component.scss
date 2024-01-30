@@ -1,3 +1,13 @@
+:host-context(.light) {
+  .wrapper {
+    background-color: white;
+
+    h1 {
+      color: black;
+    }
+  }
+}
+
 :host {
   .wrapper {
     background-color: var(--second-color-10);

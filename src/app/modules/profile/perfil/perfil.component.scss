@@ -1,3 +1,9 @@
+:host-context(.light) {
+  .main {
+    background-color: var(--light-mode-100);
+  }
+}
+
 :host {
   .main {
     display: grid;

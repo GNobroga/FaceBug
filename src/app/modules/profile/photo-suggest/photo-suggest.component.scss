@@ -1,3 +1,14 @@
+:host-context(.light) {
+  h1 {
+    color: black;
+  }
+
+  button {
+    color: black !important;
+    background-color: var(--light-mode-200);
+  }
+}
+
 :host {
   button {
     background-color: var(--second-color-05);
