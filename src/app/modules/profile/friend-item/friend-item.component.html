@@ -6,7 +6,9 @@
       <span class="tw-text-sm tw-opacity-50">8 amigos comuns</span>
     </div>
   </div>
-  <div class="three-dot hover:tw-bg-light-100 tw-p-2 tw-rounded-full">
+  <div class="three-dot  hover:tw-bg-light-100 tw-p-2 tw-rounded-full" (click)="menu.toggle($event)">
     <img src="assets/icons/more.png">
   </div>
 </li>
+
+<p-menu #menu [model]="menuItems" [popup]="true" ></p-menu>

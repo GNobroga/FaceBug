@@ -14,6 +14,9 @@ import { FormsModule } from '@angular/forms';
 import { InputTextModule } from 'primeng/inputtext';
 import { FriendItemComponent } from './friend-item/friend-item.component';
 import { RouterModule } from '@angular/router';
+import { MenuModule } from 'primeng/menu';
+import { PhotoGalleryComponent } from './photo-gallery/photo-gallery.component';
+import { PhotoGalleryItemComponent } from './photo-gallery-item/photo-gallery-item.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { RouterModule } from '@angular/router';
     PhotoComponent,
     PerfilComponent,
     SearchFriendsComponent,
-    FriendItemComponent
+    FriendItemComponent,
+    PhotoGalleryComponent,
+    PhotoGalleryItemComponent
   ],
   imports: [
     CommonModule,
@@ -33,7 +38,8 @@ import { RouterModule } from '@angular/router';
     PrincipalModule,
     FormsModule,
     InputTextModule,
-    RouterModule
+    RouterModule,
+    MenuModule
   ],
   exports: [
     ProfileHeaderComponent,

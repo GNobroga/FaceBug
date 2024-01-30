@@ -11,4 +11,53 @@
     }
   }
 
+
 }
+
+
+::ng-deep {
+
+  p-menu {
+    max-width: 25vw !important;
+    width: 100% !important;
+  }
+
+  p-menu > div {
+    border-radius: 1rem !important;
+    max-width: 20vw !important;
+    width: 100% !important;
+  }
+
+  .p-menu-list {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    background-color: var(--second-color-10);
+    @apply tw-shadow-xl;
+    border: 1px solid rgba(255, 255, 255, 0.33);
+    border-radius: 1rem;
+  }
+
+  .p-menuitem-content {
+    border-radius: 0.5rem;
+    background-color: transparent !important;
+    &:hover {
+      background-color: var(--second-color-05) !important;
+    }
+  }
+
+  .p-menu-list .p-menuitem-link {
+    display: flex;
+    gap: 0.8rem;
+    font-weight: bold;
+    padding: 0.5rem;
+
+    span {
+      color:  white;
+      background-color: none !important;
+
+
+    }
+  }
+ }
