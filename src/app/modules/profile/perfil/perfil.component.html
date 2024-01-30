@@ -4,9 +4,14 @@
     <app-friends/>
   </section>
   <div class="area-2">
-    <app-comment-box/>
+    <app-comment-box (onMenuOpen)="openCommentBox.set(true)"/>
     <app-posts [link]="'/perfil/posts/1'"/>
   </div>
 </main>
+
+@if (openCommentBox()) {
+  <app-create-post (closeModal)="openCommentBox.set(false)"/>
+}
+
 
 <router-outlet/>
