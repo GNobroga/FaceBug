@@ -1,10 +1,20 @@
 <app-header/>
 
-<div class="wrapper">
+<div class="wrapper tw-flex tw-gap-5 tw-flex-col">
   <div class="header">
-    <div class="profile tw-max-w-screen-xl tw-mx-auto">
+    <div class="profile tw-max-w-1000px tw-mx-auto">
       <app-profile-header/>
     </div>
   </div>
+  <main class="main tw-max-w-1000px tw-mx-auto tw-w-full">
+    <section class="area-1">
+      <app-gallery/>
+      <app-friends/>
+    </section>
+    <div class="area-2">
+      <app-comment-box/>
+      <app-posts/>
+    </div>
+  </main>
 </div>
 

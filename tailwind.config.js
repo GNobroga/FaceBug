@@ -30,7 +30,8 @@ module.exports = {
       spacing: {
         '250px': '250px',
         '30vw': '30vw',
-        '45%': '45%'
+        '45%': '45%',
+        '1000px': '1000px',
       }
     },
     container: {
