@@ -23,6 +23,7 @@ import { MenuUploadComponent } from './menu-upload/menu-upload.component';
 import { PhotoSuggestComponent } from './photo-suggest/photo-suggest.component';
 import { PhotoSuggestItemComponent } from './photo-suggest/photo-suggest-item/photo-suggest-item.component';
 import { ButtonModule } from 'primeng/button';
+import SharedModule from 'modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -51,12 +52,14 @@ import { ButtonModule } from 'primeng/button';
     RouterModule,
     MenuModule,
     ImageCropperModule,
-    ButtonModule
+    ButtonModule,
+    SharedModule
   ],
   exports: [
     ProfileHeaderComponent,
     FriendsComponent,
     GalleryComponent,
+    SharedModule
   ]
 })
 export class ProfileModule { }

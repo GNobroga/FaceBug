@@ -6,6 +6,7 @@ import { PhotoGalleryComponent } from 'modules/profile/photo-gallery/photo-galle
 import { SearchFriendsComponent } from 'modules/profile/search-friends/search-friends.component';
 import { VideoGalleryComponent } from 'modules/profile/video-gallery/video-gallery.component';
 import RegisterComponent from 'pages/account/register/register.component';
+import { ChatComponent } from 'pages/chat/chat.component';
 
 export const routes: Routes = [
   {
@@ -28,8 +29,12 @@ export const routes: Routes = [
         data: {
           returnUrl: '/',
         }
-      }
+      },
     ]
+  },
+  {
+    path: 'mensages',
+    component: ChatComponent,
   },
   {
     path: 'perfil',

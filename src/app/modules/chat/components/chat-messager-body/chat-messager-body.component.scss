@@ -1,0 +1,26 @@
+:host {
+
+  header {
+    padding: 0.5rem;
+    border-bottom: 0.05rem solid rgba(255, 255, 255, 0.100);
+    .perfil {
+      width: 45px;
+      height: 45px;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
+
+  .chat {
+    padding: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      color: white;
+    }
+  }
+
+
+}

@@ -67,8 +67,8 @@
       gap: 0.5rem;
 
       input {
-        padding-left: 0.5rem;
-        max-width: 13vw;
+        padding-left: 0.8rem;
+        max-width: max(13vw, 50px);
         flex: 1;
         display: none;
         position: relative;
