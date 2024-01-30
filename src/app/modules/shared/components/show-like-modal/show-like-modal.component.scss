@@ -1,3 +1,19 @@
+:host-context(.light) {
+  .wrapper {
+    background-color: white;
+
+    div>span {
+      color: black;
+    }
+
+    button {
+      img {
+        filter: invert(0) !important;
+      }
+    }
+  }
+}
+
 :host {
   position: fixed;
   top: 0;
