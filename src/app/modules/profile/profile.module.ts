@@ -22,6 +22,7 @@ import { ImageCropperModule } from 'ngx-image-cropper';
 import { MenuUploadComponent } from './menu-upload/menu-upload.component';
 import { PhotoSuggestComponent } from './photo-suggest/photo-suggest.component';
 import { PhotoSuggestItemComponent } from './photo-suggest/photo-suggest-item/photo-suggest-item.component';
+import { ButtonModule } from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { PhotoSuggestItemComponent } from './photo-suggest/photo-suggest-item/ph
     InputTextModule,
     RouterModule,
     MenuModule,
-    ImageCropperModule
+    ImageCropperModule,
+    ButtonModule
   ],
   exports: [
     ProfileHeaderComponent,

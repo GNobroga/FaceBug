@@ -36,6 +36,9 @@
       background-color: var(--second-color-10);
       border: 1px solid rgba(255, 255, 255, 0.15);
       padding-bottom: 1rem;
+      max-height: 700px;
+      overflow: hidden;
+      overflow-y: auto;
 
       header {
         padding: 1rem;
@@ -57,9 +60,18 @@
 
       .actions {
         li {
+          position: relative;
           button.active {
             background-color: #394D62;
             color: var(--blue-color-100);
+          }
+
+          input {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            opacity: 0;
+            cursor: pointer;
           }
 
           &:hover {
@@ -68,5 +80,10 @@
         }
       }
     }
+  }
+
+  .area-cropper {
+    margin: 0 auto;
+    max-width: 350px;
   }
 }

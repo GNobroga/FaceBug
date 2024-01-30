@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, signal } from '@angular/core';
-import { fadeInOutAnimation } from 'animations/fastFadeInOutAnimation';
+import { fadeInOutAnimation } from 'animations';
 
 @Component({
   selector: 'app-post',
