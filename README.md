@@ -5,8 +5,8 @@ O objetivo desse projeto é fazer um layout parecido com o do facebook, criar um
 # Vídeo
 
 
-https://github.com/GNobroga/FaceBug/assets/88632109/898093f6-3402-4800-9bc3-1d8cb5c4f422
 
+https://github.com/GNobroga/FaceBug/assets/88632109/98001e9b-5100-4a95-ac97-b8b3767c313e
 
 
 ## Tecnologias
